@@ -1,0 +1,16 @@
+<div *ngIf="!hidden && visible" class="mobile-feedback d-lg-none">
+  <span (click)="showFeedbackForm()">Lasă-ne un comentariu!</span>
+  <span class="btn-close" (click)="hidden=!hidden" style="margin-top: 5px"><fa-icon icon="times"></fa-icon></span>
+</div>
+
+<div *ngIf="hidden  && visible" class="mobile-feedback-hidden d-lg-none" (click)="hidden=!hidden">
+</div>
+
+<div *ngIf="!hidden  && visible" class="desktop-feedback d-none d-lg-block">
+  <button mat-raised-button color="accent" (click)="showFeedbackForm()">Lasă-ne un comentariu!</button>
+  <span class="btn-close" (click)="hidden=!hidden"><fa-icon icon="times"></fa-icon></span>
+</div>
+
+<div *ngIf="hidden  && visible" class="desktop-feedback-hidden d-none d-lg-block" (click)="showFeedbackForm()">
+  Lasă-ne un comentariu!
+</div>

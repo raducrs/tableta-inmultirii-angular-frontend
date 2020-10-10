@@ -1,0 +1,58 @@
+<table mat-table
+       [dataSource]="dataSource" multiTemplateDataRows
+       matSort
+       class="mat-elevation-z8"
+    style="width:90%; margin: auto; margin-top:0.5em;" #table>
+  <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay | slice: 0: 1; first as isFirst" sticky>
+    <th mat-header-cell *matHeaderCellDef class="col-text" mat-sort-header > {{columnsToDisplayName[column]}} </th>
+    <td mat-cell *matCellDef="let element" class="col-text"> <fa-icon *ngIf="isFirst"[icon]="getIcon(element['gadgetType'])"></fa-icon> {{element[column]}} </td>
+  </ng-container>
+  <ng-container matColumnDef="{{column}}" *ngFor="let column of columnsToDisplay | slice: 1">
+    <th mat-header-cell *matHeaderCellDef class="col-text" mat-sort-header > {{columnsToDisplayName[column]}} </th>
+    <td mat-cell *matCellDef="let element" class="col-text"> {{element[column]}} </td>
+  </ng-container>
+
+  <ng-container matColumnDef="status">
+    <th mat-header-cell *matHeaderCellDef class="col-text" mat-sort-header> Statut </th>
+    <td mat-cell *matCellDef="let element" class="col-text" [style.color]="getColor(element.status)">
+      <fa-icon *ngIf="element.status" [icon]="getStatusIcon(element.status)"></fa-icon> {{ getStatus(element.status)}}
+    </td>
+  </ng-container>
+
+  <ng-container matColumnDef="actionColumn" stickyEnd>
+    <th mat-header-cell *matHeaderCellDef class="col-text"> Actiune </th>
+    <td mat-cell *matCellDef="let element" class="col-text">
+      <div style="display: flex; justify-content: center">
+        <button mat-raised-button color="primary" aria-label="Contact" style="margin:0.25em">
+            Detalii
+        </button>
+      </div>
+    </td>
+  </ng-container>
+
+
+  <!-- Expanded Content Column - The detail row is made up of this one column that spans across all columns -->
+  <ng-container matColumnDef="expandedDetail">
+    <td mat-cell *matCellDef="let element" [attr.colspan]="columnsToDisplay.length">
+      <div class="example-element-detail"
+           [@detailExpand]="element.id == expandedElement ? 'expanded' : 'collapsed'">
+          <anms-contact-display *ngIf="element.id == expandedElement" [id]="element.id" style="width:100%"></anms-contact-display>
+      </div>
+    </td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="columnsToDisplayWD"></tr>
+  <tr mat-row *matRowDef="let element; columns: columnsToDisplayWD;"
+      class="example-element-row"
+      [class.example-expanded-row]="expandedElement === element.id"
+      (click)="expandedElement = expandedElement === element.id ? null : element.id;">
+  </tr>
+
+  <tr mat-row *matRowDef="let row; columns: ['expandedDetail']" class="example-detail-row"></tr>
+
+
+  <tr class="mat-row" *matNoDataRow>
+    <td class="mat-cell" colspan="4">Nu exista inregistrari</td>
+  </tr>
+</table>
+<mat-paginator style="width:90%; margin: auto;" [pageSizeOptions]="[ 10, 25, 50, 100]"></mat-paginator>

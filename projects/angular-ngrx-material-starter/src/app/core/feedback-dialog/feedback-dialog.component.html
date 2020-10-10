@@ -1,0 +1,15 @@
+<h2>Lasă-ne un comentariu sau feedback</h2>
+<mat-dialog-content>
+  <p>Dacă ai întâmpinat o problemă tehnică, ai o sugestie care ne va ajuta să îmbunătățim platforma sau pentru orice
+    alt gen de comentariu sau feedback, poți folosi formularul de mai jos.</p>
+  <form [formGroup]="frmGr">
+    <mat-form-field class="full-width-input-field">
+      <mat-label>Inserează aici comentariul tău</mat-label>
+      <textarea matInput formControlName="comment"></textarea>
+    </mat-form-field>
+  </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Anulează</button>
+  <button mat-button (click)="sendComment()" [disabled]="sending" cdkFocusInitial>Trimite</button>
+</mat-dialog-actions>

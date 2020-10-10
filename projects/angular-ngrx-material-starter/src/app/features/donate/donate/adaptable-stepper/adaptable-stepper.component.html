@@ -1,0 +1,98 @@
+<mat-horizontal-stepper #stepper linear="true" *ngIf="!smallScreen">
+  <mat-step [state]="completedWhat ? 'done' : 'what' " [completed]="completedWhat">
+    <ng-template matStepLabel="done"><span [class.completed-step]="completedWhat">Ce donez</span></ng-template>
+    <anms-gadget-tab (selectionMade)="gadgetSelectionMade($event)"></anms-gadget-tab>
+      <div class="prev-next-btns-container">
+        <button mat-button mat-flat-button [color]="completedWhat ? 'primary' : ''" matStepperNext>Urmatorul</button>
+      </div>
+  </mat-step>
+  <mat-step [state]="completedHow ? 'done' : 'how' " [completed]="completedHow">
+    <ng-template matStepLabel><span [class.completed-step]="completedHow">Unde donez</span></ng-template>
+    <anms-location-tab (selectionMade)="locationSelectionMade($event)"></anms-location-tab>
+      <div class="prev-next-btns-container">
+        <button mat-button mat-flat-button matStepperPrevious>Inapoi</button>
+        <button mat-button mat-flat-button [color]="completedHow ? 'primary' : ''" matStepperNext>Urmatorul</button>
+      </div>
+
+  </mat-step>
+  <mat-step [state]="completedWho ? 'done' : 'who' " [completed]="completedWho">
+    <ng-template matStepLabel><span [class.completed-step]="completedWho">Despre mine</span></ng-template>
+    <anms-user-tab (selectionMade)="userSelectionMade($event)"></anms-user-tab>
+    <div class="prev-next-btns-container">
+      <button mat-button mat-flat-button matStepperPrevious>Inapoi</button>
+      <button mat-button mat-flat-button [color]="completedWho ? 'primary' : ''" matStepperNext>Urmatorul</button>
+    </div>
+  </mat-step>
+  <mat-step state="ready" [completed]="completedWhat && completedHow && completedWho">
+    <ng-template matStepLabel><span>Gata</span></ng-template>
+    <anms-finish-tab></anms-finish-tab>
+    <div class="prev-next-btns-container">
+      <button mat-button mat-flat-button matStepperPrevious [disabled]="sending">Inapoi</button>
+      <button mat-button mat-flat-button [disabled]="sending" color="primary" (click)="sendDonation()">Trimite</button>
+    </div>
+  </mat-step>
+  <ng-template matStepperIcon="what">
+    <fa-icon icon="laptop"></fa-icon>
+  </ng-template>
+  <ng-template matStepperIcon="how">
+    <fa-icon icon="map-marker-alt"></fa-icon>
+  </ng-template>
+  <ng-template matStepperIcon="who">
+    <fa-icon icon="user-ninja"></fa-icon>
+  </ng-template>
+  <ng-template matStepperIcon="done">
+    <mat-icon>done</mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="ready">
+    <fa-icon icon="flag-checkered"></fa-icon>
+  </ng-template>
+</mat-horizontal-stepper>
+
+<mat-vertical-stepper #stepper linear="true" *ngIf="smallScreen">
+  <mat-step [state]="completedWhat ? 'done' : 'what' " [completed]="completedWhat">
+    <ng-template matStepLabel="done"><span [class.completed-step]="completedWhat">Ce donez</span></ng-template>
+    <anms-gadget-tab (selectionMade)="gadgetSelectionMade($event)"></anms-gadget-tab>
+    <div class="prev-next-btns-container">
+      <button mat-button mat-flat-button [color]="completedWhat ? 'primary' : ''" matStepperNext>Urmatorul</button>
+    </div>
+  </mat-step>
+  <mat-step [state]="completedHow ? 'done' : 'how' " [completed]="completedHow">
+      <ng-template matStepLabel><span [class.completed-step]="completedHow">Unde donez</span></ng-template>
+      <anms-location-tab (selectionMade)="locationSelectionMade($event)"></anms-location-tab>
+      <div class="prev-next-btns-container">
+        <button mat-button mat-flat-button matStepperPrevious>Inapoi</button>
+        <button mat-button mat-flat-button [color]="completedHow ? 'primary' : ''" matStepperNext>Urmatorul</button>
+      </div>
+  </mat-step>
+  <mat-step [state]="completedWho ? 'done' : 'who' " [completed]="completedWho">
+    <ng-template matStepLabel><span [class.completed-step]="completedWho">Despre mine</span></ng-template>
+    <anms-user-tab (selectionMade)="userSelectionMade($event)"></anms-user-tab>
+    <div class="prev-next-btns-container">
+      <button mat-button mat-flat-button matStepperPrevious>Inapoi</button>
+      <button mat-button mat-flat-button [color]="completedWho ? 'primary' : ''" matStepperNext>Urmatorul</button>
+    </div>
+  </mat-step>
+  <mat-step state="ready">
+    <ng-template matStepLabel><span>Gata</span></ng-template>
+    <anms-finish-tab></anms-finish-tab>
+    <div class="prev-next-btns-container">
+      <button mat-button mat-flat-button matStepperPrevious [disabled]="sending">Inapoi</button>
+      <button mat-button mat-flat-button [disabled]="sending" color="primary" (click)="sendDonation()">Trimite</button>
+    </div>
+  </mat-step>
+  <ng-template matStepperIcon="what">
+    <fa-icon icon="recycle"></fa-icon>
+  </ng-template>
+  <ng-template matStepperIcon="how">
+    <fa-icon icon="trash"></fa-icon>
+  </ng-template>
+  <ng-template matStepperIcon="who">
+    <fa-icon icon="user-ninja"></fa-icon>
+  </ng-template>
+  <ng-template matStepperIcon="done">
+    <mat-icon>done</mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="ready">
+    <fa-icon icon="flag-checkered"></fa-icon>
+  </ng-template>
+</mat-vertical-stepper>

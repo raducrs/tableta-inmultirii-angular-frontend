@@ -1,0 +1,53 @@
+<div class="container" style="background: white; padding: 1em">
+  <h1 class="d-none d-md-block">Crează-ți tabla desenată și răspândește mesajul</h1>
+  <h2 class="d-md-none">Crează-ți tabla desenată și răspândește mesajul</h2>
+  <input type="file" id="file" accept="image/*" #file (change)="fileUploaded($event)"/>
+  <input type="file" id="camera" accept="image/*;capture=camera" capture (change)="fileUploaded($event)" #camera>
+  <input id="inp_img" name="img" type="hidden" value="">
+  <input id="imgSrcInput" style="display:none" type="text" [value]="imgSrc"/>
+  <div *ngIf="!(loading | async) && (noResult | async)" class="fullwidth">
+    <img src="assets/promo.png" class="imgclass s3"/>
+    <div class="fullwidth" style="text-align: center">
+      {{uploadError | async}}
+    </div>
+    <div class="fullwidth buttons">
+      <button mat-raised-button color="accent" (click)="file.click()"><fa-icon icon="upload" style="margin-right: 0.25em"></fa-icon>Incarca poza</button>
+      <button mat-raised-button color="accent" (click)="camera.click()"><fa-icon icon="camera" style="margin-right: 0.25em"></fa-icon>Camera</button>
+    </div>
+  </div>
+  <div *ngIf="(loading | async) && (noResult | async)" class="fullwidth">
+      <div class="fullwidth">
+        <mat-spinner style="margin:auto"></mat-spinner>
+      </div>
+      <div class="fullwidth" style="text-align: center">
+        Procesam imaginea ta. Asteapta un moment ...
+      </div>
+  </div>
+  <div *ngIf="!(noResult | async)">
+    <div *ngIf="failedProcessing | async" class="fullwidth">
+        <div class="fullwidth" style="text-align: center;"> Ne pare rau, dar nu am reusit sa procesam imaginea ta. Te rugam reincearca</div>
+        <button mat-raised-button color="warn" class="fullwidth" style="display: block" (click)="retry()">Reincearca</button>
+    </div>
+    <div *ngIf="!(failedProcessing | async)" class="fullwidth">
+      <img [src]="imgSrc" class="imgclass s3"/>
+      <div class="fullwidth buttons">
+        <a mat-raised-button [href]="imgSrc" color="primary" rel="noopener noreferrer" target="_blank" ><fa-icon icon="download" style="margin-right: 0.25em"></fa-icon>Download</a>
+      </div>
+      <div class="fullwidth buttons" style="margin-top: 1em">
+        <button mat-raised-button color="accent" (click)="copyImageLink()"><fa-icon icon="clone" style="margin-right: 0.25em"></fa-icon>Copiază poză</button>
+        <button mat-raised-button color="warn" (click)="copyLinkAddress()"><fa-icon icon="clone" style="margin-right: 0.25em"></fa-icon>Copiază link </button>
+      </div>
+      <p style="text-align:center; margin-top:0.75em">Link-ul conține poza dumneavostră și poate fi partajat ușor pe rețelele sociale.</p>
+      <div style="text-align:center; margin-top: 1em">
+        <mat-form-field appearance="outline" class="full-width-text-area">
+          <mat-label>Mesaj propus</mat-label>
+          <textarea matInput disabled="true" value="Donează laptopul, tableta sau telefonul vechi pe Tableta Înmulțirii pentru Educație digitală cu șanse egale! Contribuie și tu la răspândirea mesajului cu propria tablă desenată. &#13;&#10;&#13;&#10;Poți accesa direct www.tableta-inmultirii.ro pentru a ajuta. &#13;&#10;&#13;&#10;#educatiedigitala #ajut #imipasa #tableta-inmultirii"></textarea>
+          <button mat-icon-button matPrefix  (click)="copyText()" [attr.aria-label]="'Copiaza continut'" >
+            <fa-icon icon="clone" style="margin-right: 0.25em"></fa-icon>
+          </button>
+        </mat-form-field>
+      </div>
+
+    </div>
+  </div>
+</div>

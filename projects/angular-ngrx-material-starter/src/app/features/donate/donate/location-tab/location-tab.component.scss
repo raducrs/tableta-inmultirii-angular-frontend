@@ -1,0 +1,106 @@
+.example-headers-align .mat-expansion-panel-header-title,
+.example-headers-align .mat-expansion-panel-header-description {
+  flex-basis: 0;
+}
+
+.example-headers-align .mat-expansion-panel-header-description {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.example-headers-align .mat-form-field + .mat-form-field {
+  margin-left: 8px;
+}
+
+.search-bar-container {
+  position: relative;
+  width: 90%;
+  border-bottom: 1px solid black;
+  margin-bottom: 15px;
+  font-size: 16px;
+
+  .search-icon {
+    position: absolute;
+    left: 5px;
+  }
+  input {
+    padding-left: 30px;
+    width: 100%;
+    border: unset;
+  }
+}
+.chip-list-container {
+  max-height: 40vh;
+
+  .my-chip {
+    width: 22%;
+    min-width: 175px;
+
+    overflow: hidden;
+
+    text-align: center;
+    &.pregenerated {
+      border: 1px solid #e0e0e0;
+      background-color: white;
+      color: rgba(0, 0, 0, 0.87);
+    }
+
+    &.selected {
+      background-color: #e0e0e0;
+      color: rgba(0, 0, 0, 0.87);
+    }
+    &.category {
+      font-weight: bolder;
+      color: black;
+    }
+  }
+}
+
+.custom {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.87);
+  border: 1px solid #e0e0e0;
+  &.selected {
+    background-color: #f0f0f0;
+    color: rgba(0, 0, 0, 0.87);
+  }
+}
+
+.chip-content-container {
+  display: flex;
+  flex-wrap: nowrap;
+  width: 100%;
+
+  .chip-content-name {
+    display: flex;
+    // https://css-tricks.com/almanac/properties/t/text-overflow/
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 80%;
+  }
+
+  .chip-content-icon {
+    display: flex;
+    margin-left: auto;
+  }
+}
+
+.inline-icon {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.spacer {
+  height: 1px;
+  overflow-y: hidden;
+}
+
+:host ::ng-deep .mat-standard-chip:focus::after {
+  opacity: 0 !important;
+}
+
+:host ::ng-deep .mat-chip-list-wrapper {
+  margin: 0;
+}
+

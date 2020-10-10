@@ -1,0 +1,30 @@
+"Site-ul nu este activ pentru moment. Urmeaza lansarea in curand. Va rugam reveniti!"
+#- nu afiseaza erori la inregistrare, la resetare parola, cont deja existent
+   {"__type":"NotAuthorizedException","message":"Incorrect username or password."}
+   {"__type":"UsernameExistsException","message":"An account with the given email already exists."}
+#  - clear registered user state on logout
+- CAPTCHA
+- refresh on activity
+#- password min length
+- versioning in api gateway
+#- phone numbers format
+#- add facebook page to contact
+- perform a blue green deployment
+- add a list of prefered donners to the location page
+- add map to location page
+#- add feedback button
+- automation for inscription of parteners - config page, short name, county, send fake donations and testing
+- facebook group post for personal donations
+#- list of changes with donations
+#- alert for partener registration
+#- webhooks for events - e.g. fb messenger for registered or donated objects
+#- check that long names do not stretchthe card to much
+#- name too long and address in simple card
+#- aws crossdomain call to custom domains 
+- check all authLogout calls
+- enable compression for cpanel and angular
+
+
+v=spf1 +a +mx +ip4:91.244.247.50 ~all
+
+

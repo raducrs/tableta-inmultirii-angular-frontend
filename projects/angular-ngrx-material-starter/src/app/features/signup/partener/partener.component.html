@@ -1,0 +1,83 @@
+<div class="container">
+  <h2>Vreau sa ma implic</h2>
+  <form [formGroup]="partenerForm" (ngSubmit)="submitForm()">
+    <p>Fiecare filiala trebuie inregistrata separat</p>
+    <div class="flex-container">
+      <mat-form-field class="full-width-input-field" >
+        <mat-label>Numele organizatiei</mat-label>
+        <input matInput #name maxlength="100" placeholder="Organizatia filiala Bucuresti" required formControlName="name">
+        <mat-hint align="end">{{name.value ? name.value.length + '/100' : '' }}</mat-hint>
+        <mat-error *ngIf="hasError('name', 'required')">Numele este necesar</mat-error>
+        <mat-error *ngIf="hasError('name', 'maxlength')">Mai mult de 100 de caractere</mat-error>
+      </mat-form-field>
+    </div>
+    <p>Aceste date vor fi publicate si partajate ca date de contact catre utilizatori! Inscrierea in program implica acceptul dumneavoastra</p>
+    <div class="flex-container">
+      <mat-form-field class="full-width-input-field" >
+        <mat-label>Email</mat-label>
+        <input matInput type="email" #email maxlength="100" placeholder="contact.bucuresti@organizatia.ro" required formControlName="email">
+        <mat-hint align="end">{{email.value ? email.value.length + '/100' : 'Folosit pentru validare' }}</mat-hint>
+        <mat-error *ngIf="hasError('email', 'required')">Email-ul este necesar</mat-error>
+        <mat-error *ngIf="hasError('email', 'maxlength')">Mai mult de 100 de caractere</mat-error>
+        <mat-error *ngIf="hasError('email', 'email')">Email invalid</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="flex-container">
+      <mat-form-field class="full-width-input-field" >
+        <mat-label>Parola</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" #password maxlength="50" required formControlName="password">
+        <mat-error *ngIf="hasError('password', 'required')">Parola este necesara</mat-error>
+        <mat-error *ngIf="hasError('password', 'minlength')">Parola prea scurta. Minim 6 caractere</mat-error>
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Ascunde parola'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    <div class="flex-container">
+      <mat-form-field class="full-width-input-field" >
+        <mat-label>Confirmare parola</mat-label>
+        <input matInput [type]="hide2 ? 'password' : 'text'" #password2 maxlength="50" required formControlName="password2" [errorStateMatcher]="errorMatcher">
+        <mat-error *ngIf="passmismatchError(password2.value)">Cele doua parole nu se potrivesc</mat-error>
+        <mat-error *ngIf="hasError('password2', 'required')">Confirma parola</mat-error>
+        <button mat-icon-button matSuffix (click)="hide2 = !hide2" [attr.aria-label]="'Ascunde parola'" [attr.aria-pressed]="hide2">
+          <mat-icon>{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+    <div class="flex-container">
+      <mat-form-field class="full-width-input-field" >
+        <mat-label>Telefon</mat-label>
+        <input matInput type="tel" #phone maxlength="10" placeholder="0723456789" required formControlName="phone">
+        <mat-hint align="end">{{phone.value ? phone.value.length + '/10' : 'Folosit pentru validare' }}</mat-hint>
+        <mat-error *ngIf="hasError('phone', 'required')">Numarul de telefon este necesar</mat-error>
+        <mat-error *ngIf="hasError('phone', 'pattern')">Formatul nu este potrivit</mat-error>
+      </mat-form-field>
+    </div>
+    <div class="flex-container">
+      <mat-form-field class="full-width-input-field" >
+        <mat-label>Adresa</mat-label>
+        <input matInput type="text" #address maxlength="100" placeholder="Str. Pacii, nr. 3" required formControlName="address">
+        <mat-hint align="end">{{address.value ? address.value.length + '/100' : 'Adresa filialei' }}</mat-hint>
+        <mat-error *ngIf="hasError('address', 'required')">Adresa este necesara</mat-error>
+        <mat-error *ngIf="hasError('address', 'maxlength')">Adresa este prea lunga</mat-error>
+        <mat-error *ngIf="hasError('address', 'minlength')">Adresa este invalida</mat-error>
+      </mat-form-field>
+    </div>
+    <p>Indicati linkul catre logo-ul organizatiei (daca se cunoaste)</p>
+    <div class="flex-container">
+      <mat-form-field class="full-width-input-field" >
+        <mat-label>Link logo</mat-label>
+        <input matInput type="text" #logo maxlength="200" placeholder="https://organizatia.ro/logo.png" formControlName="link">
+        <mat-hint align="end">{{logo.value ? logo.value.length + '200' : '' }}</mat-hint>
+      </mat-form-field>
+    </div>
+    <div style="color:red; text-align:center" *ngIf="signupError | async">
+      {{ errorMessage }}
+    </div>
+    <div style="text-align: center">
+      <button mat-raised-button [ngClass]="routeAnimationsElements" type="submit">
+        Creaza cont
+      </button>
+    </div>
+  </form>
+</div>

@@ -1,0 +1,39 @@
+
+<div style="width:100%; display: flex; justify-content:center;" *ngIf="status === 'accepted'">
+  <button mat-raised-button color="primary" style="margin: 10px;" (click)="showContact()">
+    Arata contact
+  </button>
+  <button mat-raised-button color="warn" style="margin: 10px;" (click)="reject()">
+    Sterge
+  </button>
+</div>
+
+<div style="width:100%;" *ngIf="(status === 'contact-shown' ||
+            status === 'contacted' ||
+           status === 'received') && !loading">
+  <div *ngIf="details">
+    <div *ngIf="details.user?.name">Nume: {{ details.user?.name }}</div>
+    <div *ngIf="details.user?.email">Email: <a href="mailto:{{ details.user?.email }}">{{ details.user?.email }}</a></div>
+    <div *ngIf="details.user?.phone">Telefon: <a href="tel:{{ details.user?.phone }}">{{ details.user?.phone }}</a></div>
+    <div *ngIf="details.user?.registeredUser">Are cont: {{ details.user?.registeredUser ? 'Da' : 'Nu' }}</div>
+    <div>Ultima oara contactat: {{ details.lastContact ?  details.lastContact : 'Nu a fost contact' }}</div>
+  </div>
+  <div style="width:100%; display: flex; justify-content:center;">
+    <button mat-raised-button color="primary" style="margin: 10px;" *ngIf="status === 'contact-shown' || status === 'contacted' "
+            (click)="contacted()">
+      Marcheaza: Contactat
+    </button>
+    <button mat-raised-button color="secondary" style="margin: 10px;" [disabled]="status === 'contact-shown'"
+            (click)="received()" *ngIf="status !== 'received'">
+      Marcheaza: Primit
+    </button>
+    <button mat-raised-button color="warn" style="margin: 10px;"  *ngIf="status !== 'received'" (click)="reject()">
+      Sterge
+    </button>
+  </div>
+
+</div>
+
+<div style="width:100%; display: flex; justify-content:center;" *ngIf="loading">
+  <mat-spinner [diameter]="30"></mat-spinner>
+</div>

@@ -1,0 +1,40 @@
+<div class="container" style="padding-top:5em; padding-bottom: 5em; background: white; display: flex; align-content: center; justify-content:center">
+  <div style="box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);     border-top-right-radius: 4px;
+    border-top-left-radius: 4px; padding: 1em">
+
+    <h2>Intra in cont</h2>
+  <form [formGroup]="lUser" (ngSubmit)="loginUser()">
+    <p style="color: red; max-width: 200px;" *ngIf="failedLogin"> {{ errorMessage }}</p>
+    <div class="flex-container">
+      <mat-form-field class="full-width-input-field">
+        <mat-label>Adresa email</mat-label>
+        <input matInput type="email" maxlength="50" placeholder="superdonatorul@exemplu.com" formControlName="lEmail">
+        <mat-error *ngIf="hasError('lEmail', 'required')">Email-ul este necesar</mat-error>
+        <mat-error *ngIf="hasError('lEmail', 'maxlength')">Mai mult de 50 de caractere</mat-error>
+        <mat-error *ngIf="hasError('lEmail', 'email')">Email invalid</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="flex-container" >
+      <mat-form-field class="full-width-input-field">
+        <mat-label>Parola</mat-label>
+        <input matInput [type]="hide ? 'password' : 'text'" maxlength="50" placeholder="" formControlName="lPassword">
+        <mat-error *ngIf="hasError('lPassword', 'required')">Parola este necesara</mat-error>
+        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Ascunde parola'" [attr.aria-pressed]="hide">
+          <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </button>
+      </mat-form-field>
+    </div>
+
+
+    <div class="prev-next-btns-container" style="display: flex; justify-content: center;">
+      <button mat-button mat-flat-button color="primary" type="submit">Login</button>
+    </div>
+
+    <div style="display: flex; justify-content: center; padding-top: 0.75em;">
+      <a routerLink="/user-forms/pwd-reset" rel="noopener noreferrer"
+         target="_blank">Am uitat parola</a>
+    </div>
+  </form>
+  </div>
+</div>

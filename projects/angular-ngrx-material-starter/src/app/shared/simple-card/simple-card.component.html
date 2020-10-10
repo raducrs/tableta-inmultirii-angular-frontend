@@ -1,0 +1,27 @@
+<div class="card-container">
+  <div class="card-header">
+<!--    <span class="card-icon"><fa-icon *ngIf="icon" [icon]="icon"></fa-icon></span>-->
+    <div class="card-header-container">
+      <div class="card-title">
+        {{ title }}
+      </div>
+      <div class="card-subtitle">
+        {{ subtitle }}
+      </div>
+    </div>
+    <div class="card-action">
+      <span [style.color]="statusColor" *ngIf="status" style="text-transform: uppercase; font-weight: bolder">{{statusMessage}}</span>
+<!--      <mat-icon>edit</mat-icon>-->
+    </div>
+  </div>
+  <div class="card-content" *ngFor="let section of sections">
+    <mat-divider style="margin-bottom: 0.5em;"></mat-divider>
+    <table>
+      <tr *ngFor="let desc of section.description; first as isFirst" class="card-content-line">
+        <td><fa-icon *ngIf="isFirst && section.icon" [icon]="section.icon"></fa-icon></td><td>{{ desc[0] }}</td>
+        <td style="min-height:10px; height:10px;"><mat-divider style="height:100%" *ngIf="section.address" [vertical]="true"></mat-divider></td>
+        <td>{{ desc[1] }}</td>
+      </tr>
+    </table>
+  </div>
+</div>

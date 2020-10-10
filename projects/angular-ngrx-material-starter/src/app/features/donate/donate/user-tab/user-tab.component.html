@@ -1,0 +1,163 @@
+<mat-radio-group [value]="selection">
+  <mat-accordion class="example-headers-align" multi="false" hideToggle="true">
+    <mat-expansion-panel (opened)="selectedOption('anonymous')"  #aPanel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-radio-button value="anonymous"><span [class.option-selected]="selection === 'anonymous'">Fara cont</span></mat-radio-button>
+        </mat-panel-title>
+        <mat-panel-description>
+          <span></span>
+          <span [class.option-selected]="selection === 'anonymous'"><fa-icon icon="user-ninja"></fa-icon></span>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <form [formGroup]="aUser">
+        <p> Adresa si numarul tau de telefon NU vor fi facute publice. Vor fi partajate catre partenerul selectat cu unic scop contactul cu tine.</p>
+
+        <div class="flex-container">
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Nume</mat-label>
+            <input matInput type="text" #inputNameNA maxlength="50" placeholder="George" formControlName="aName">
+          </mat-form-field>
+        </div>
+        <div class="flex-container">
+          <mat-form-field class="full-width-input-field" >
+            <mat-label>Adresa email</mat-label>
+            <input matInput type="email" #inputEmailNA maxlength="50" placeholder="donatorulanonim@exemplu.com" required formControlName="aEmail">
+            <mat-error *ngIf="hasError(aUser, 'aEmail', 'required')">Email-ul este necesar</mat-error>
+            <mat-error *ngIf="hasError(aUser, 'aEmail', 'maxlength')">Mai mult de 50 de caractere</mat-error>
+            <mat-error *ngIf="hasError(aUser,'aEmail', 'email')">Email invalid</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="flex-container">
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Numar de telefon</mat-label>
+            <input matInput type="tel" #inputPhoneNA maxlength="10" placeholder="0723456789" formControlName="aPhone">
+            <mat-error *ngIf="hasError(aUser,'aPhone', 'pattern')">Formatul nu este potrivit</mat-error>
+            <mat-hint>Optional</mat-hint>
+          </mat-form-field>
+        </div>
+      </form>
+
+    </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="selectedOptionIfLoggedIn()" #userPanel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-radio-button value="registered" [disabled]="userNotLoggedin"><span [class.option-selected]="selection === 'registered'">{{userName}} </span></mat-radio-button>
+        </mat-panel-title>
+        <mat-panel-description>
+          <span></span>
+          <span [class.option-selected]="selection === 'registered'"><fa-icon icon="user-circle"></fa-icon></span>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <form [formGroup]="lUser" (ngSubmit)="loginUser()" [hidden]="!userNotLoggedin">
+        <p style="color: red; max-width:200px" *ngIf="failedLogin | async">{{ errorMessage }}</p>
+        <div class="flex-container">
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Adresa email</mat-label>
+            <input matInput type="email" #inputEmailLogIn maxlength="50" placeholder="superdonatorul@exemplu.com" formControlName="lEmail">
+            <mat-error *ngIf="hasError(lUser, 'lEmail', 'required')">Email-ul este necesar</mat-error>
+            <mat-error *ngIf="hasError(lUser, 'lEmail', 'maxlength')">Mai mult de 50 de caractere</mat-error>
+            <mat-error *ngIf="hasError(lUser,'lEmail', 'email')">Email invalid</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="flex-container">
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Parola</mat-label>
+            <input matInput [type]="lHide ? 'password' : 'text'" #inputPasswordLogin maxlength="50" placeholder="" formControlName="lPassword">
+            <mat-error *ngIf="hasError(lUser, 'lPassword', 'required')">Parola este necesara</mat-error>
+            <button mat-icon-button matSuffix (click)="lHide = !lHide" [attr.aria-label]="'Ascunde parola'" [attr.aria-pressed]="lHide">
+              <mat-icon>{{lHide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+
+
+        <div class="prev-next-btns-container">
+          <button mat-button mat-flat-button color="primary" type="submit">Login</button>
+        </div>
+        <div style="padding-top: 0.75em;">
+          <a routerLink="/user-forms/pwd-reset" rel="noopener noreferrer"
+             target="_blank">Am uitat parola</a>
+        </div>
+      </form>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="selectedOption('new')" [hidden]="!userNotLoggedin || signUpSuccessful">
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-radio-button value="new"><span [class.option-selected]="selection === 'new'">Cont nou</span></mat-radio-button>
+        </mat-panel-title>
+        <mat-panel-description>
+          <span></span>
+          <span [class.option-selected]="selection === 'new'"><fa-icon icon="user-plus"></fa-icon></span>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <form [formGroup]="nUser" (ngSubmit)="signUpUser()">
+        <p style="color: red; max-width: 200px;" *ngIf="failedSignup | async">{{ errorMessageSignUp }}</p>
+        <div class="flex-container">
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Nume</mat-label>
+            <input matInput type="text" #inputNameSignup maxlength="50" placeholder="George" formControlName="nName">
+          </mat-form-field>
+        </div>
+        <div class="flex-container">
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Adresa email</mat-label>
+            <input matInput type="email" #nEmail maxlength="50" placeholder="donatorulanonim@exemplu.com" required formControlName="nEmail">
+            <mat-error *ngIf="hasError(nUser, 'nEmail', 'required')">Email-ul este necesar</mat-error>
+            <mat-error *ngIf="hasError(nUser, 'nEmail', 'maxlength')">Mai mult de 50 de caractere</mat-error>
+            <mat-error *ngIf="hasError(nUser,'nEmail', 'email')">Email invalid</mat-error>
+          </mat-form-field>
+        </div>
+
+        <div class="flex-container">
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Numar de telefon</mat-label>
+            <input matInput type="tel" #nPhone maxlength="10" placeholder="0723456789" formControlName="nPhone">
+            <mat-error *ngIf="hasError(nUser,'nPhone', 'pattern')">Formatul nu este potrivit</mat-error>
+            <mat-hint>Optional</mat-hint>
+          </mat-form-field>
+        </div>
+
+        <div class="flex-container">
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Parola</mat-label>
+            <input matInput [type]="nHide ? 'password' : 'text'" #nPassword maxlength="50" placeholder="" formControlName="nPassword">
+            <mat-error *ngIf="hasError(nUser, 'nPassword', 'required')">Parola este necesar</mat-error>
+            <mat-error *ngIf="hasError(nUser, 'nPassword', 'minlength')">Parola prea scurta. Minim 6 caractere.</mat-error>
+            <button mat-icon-button matSuffix (click)="nHide = !nHide" [attr.aria-label]="'Ascunde parola'" [attr.aria-pressed]="nHide">
+              <mat-icon>{{nHide ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+
+        <div class="flex-container">
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Confirmare parola</mat-label>
+            <input matInput [type]="nHide2 ? 'password' : 'text'" #nPassword2 maxlength="50" placeholder="" formControlName="nPassword2" [errorStateMatcher]="errorMatcher">
+            <mat-error *ngIf="hasError(nUser, 'nPassword2', 'required')">Parola este necesar</mat-error>
+            <mat-error *ngIf="passmismatchError(nPassword2.value)">Cele doua parole nu se potrivesc</mat-error>
+            <button mat-icon-button matSuffix (click)="nHide2 = !nHide2" [attr.aria-label]="'Ascunde parola'" [attr.aria-pressed]="nHide">
+              <mat-icon>{{nHide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+            </button>
+          </mat-form-field>
+        </div>
+
+        <div class="prev-next-btns-container">
+          <button mat-button mat-flat-button color="primary">Signup</button>
+        </div>
+      </form>
+
+    </mat-expansion-panel>
+
+
+
+
+  </mat-accordion>
+</mat-radio-group>

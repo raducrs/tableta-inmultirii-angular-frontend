@@ -1,0 +1,47 @@
+<p>Cauta un partener in orasul cel mai apropiat de tine. Poti sa alegi doar orasul si cererile vor fi preluate in functie de necesitate.</p>
+<p>Daca nu exista inca parteneri in orasul tau, alege orasul cel mai apropiat de tine si vom anunta viitorii parteneri cand sunt disponibili.</p>
+<div class="search-bar-container">
+  <fa-icon matPrefix icon="search" class="search-icon"></fa-icon>
+  <input type="text"
+         placeholder="Cauta in judetul tau"
+         [value]="searchTerm"
+         (keyup)="changeFilter($event.target.value)"
+         (keyup.escape)="clearFilter()">
+</div>
+<div class="chip-list-container">
+  <mat-chip-list  [selectable]="false" cdkFocusInitial>
+    <mat-chip *ngFor="let element of filteredElements"
+              [removable]="false"
+              (click)="onSelect(element)"
+              class="my-chip"
+              [selectable]="false"
+              [matTooltip]="element.name">
+      <div class="chip-content-container">
+        <div class="chip-content-name">
+          <fa-icon [icon]="getIcon(element)" class="inline-icon" [style.color]="getColor(element)"></fa-icon> {{ element.name }}
+
+        </div>
+      </div>
+    </mat-chip>
+  </mat-chip-list>
+</div>
+<div style="width:100%">
+  <p [hidden]="selection">Nu ai ales o locatie</p>
+  <mat-card *ngIf="selection" style="max-width:400px; min-width:200px; width: 70%">
+    <mat-card-header>
+      <mat-card-title>
+        <fa-icon mat-card-image [icon]="getIcon(selection)"></fa-icon>
+        <span style="padding-left:25px;">{{ selection.description }}</span>
+      </mat-card-title>
+      <mat-card-subtitle>
+        {{ selection.address ? selection.address : 'Oriunde'}}
+      </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-actions>
+      <button mat-raised-button color="warn" (click)="onUnselect(selection)">
+        Sterge <fa-icon icon="trash" class="inline-icon"></fa-icon>
+      </button>
+    </mat-card-actions>
+  </mat-card>
+</div>
+

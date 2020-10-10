@@ -1,0 +1,233 @@
+<mat-radio-group [value]="selection">
+  <mat-accordion class="example-headers-align" multi="false" hideToggle="true">
+    <mat-expansion-panel (opened)="selectedOption('laptop')" #laptopPanel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-radio-button value="laptop"><span [class.option-selected]="selection === 'laptop'">Laptop</span></mat-radio-button>
+        </mat-panel-title>
+        <mat-panel-description>
+          <span></span>
+          <span [class.option-selected]="selection === 'laptop'"><fa-icon icon="laptop"></fa-icon></span>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+      <form [formGroup]="formLaptop">
+        <div class="flex-container">
+          <mat-form-field class="full-width-input-field" >
+            <mat-label>Marca</mat-label>
+            <input matInput #lMake maxlength="50" placeholder="Asus, HP, ..." required formControlName="lMake">
+            <mat-hint align="end">{{lMake.value ? lMake.value.length + '/50' : '' }}</mat-hint>
+            <mat-error *ngIf="hasError(formLaptop, 'lMake', 'required')">Marca este necesara</mat-error>
+            <mat-error *ngIf="hasError(formLaptop, 'lMake', 'maxlength')">Prea multe caractere</mat-error>
+          </mat-form-field>
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Model</mat-label>
+            <input matInput #lModel maxlength="50" placeholder="EZ0163, ZenBook, ..." formControlName="lModel">
+            <mat-hint align="end">{{lModel.value ? lModel.value.length + '/50' : 'Daca este cunoscut' }}</mat-hint>
+            <mat-error *ngIf="hasError(formLaptop, 'lModel', 'maxlength')">Prea multe caractere</mat-error>
+          </mat-form-field>
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Anul</mat-label>
+            <mat-select required formControlName="lYear">
+              <mat-option value="2020">2020</mat-option>
+              <mat-option value="2019">2019</mat-option>
+              <mat-option value="2018">2018</mat-option>
+              <mat-option value="2017">2017</mat-option>
+              <mat-option value="2016">2016</mat-option>
+              <mat-option value="2015">2015</mat-option>
+            </mat-select>
+            <mat-hint align="end">Pana la 5 ani vechime</mat-hint>
+            <mat-error *ngIf="hasError(formLaptop, 'lYear', 'required')">Anul este necesar</mat-error>
+          </mat-form-field>
+        </div>
+        <div class="flex-container">
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Diagonala</mat-label>
+            <mat-select #lScreen formControlName="lScreen">
+              <mat-option value="<12">< 12"</mat-option>
+              <mat-option value="12-14">12"-14"</mat-option>
+              <mat-option value=">14">> 14"</mat-option>
+            </mat-select>
+            <mat-hint align="end">Daca se cunoasate</mat-hint>
+          </mat-form-field>
+
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Memorie</mat-label>
+            <mat-select #lMemory formControlName="lMemory">
+              <mat-option value="< 2GB">< 2GB</mat-option>
+              <mat-option value="2GB-4GB">2GB-4GB</mat-option>
+              <mat-option value="> 4GB">> 4GB</mat-option>
+            </mat-select>
+            <mat-hint align="end">Daca se cunoasate</mat-hint>
+          </mat-form-field>
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Procesor</mat-label>
+            <mat-select #lProcessor formControlName="lProcessor">
+              <mat-option value="0">Intel Core 2 Duo</mat-option>
+              <mat-option value="1">Intel Core 2 Quad</mat-option>
+              <mat-option value="2">Intel Core i3</mat-option>
+              <mat-option value="3">Intel Core i5</mat-option>
+              <mat-option value="4">Intel Core i7</mat-option>
+              <mat-option value="5">Intel Celeron M</mat-option>
+              <mat-option value="6">AMD Zen</mat-option>
+              <mat-option value="7">AMD Zen+</mat-option>
+              <mat-option value="8">AMD Zen2</mat-option>
+              <mat-option value="9">Alt model</mat-option>
+            </mat-select>
+            <mat-hint align="end">Daca se cunoasate</mat-hint>
+          </mat-form-field>
+
+        </div>
+        <div class="flex-container">
+          <mat-checkbox required value="true" formControlName="lFct">Laptopul este functional, are incarcator si baterie (min. 30min), nu are ecranul spart</mat-checkbox>
+          <mat-error *ngIf="hasErrorCheckBox(formLaptop, 'lFct', 'required')">Se pot dona doar electronice functionale</mat-error>
+        </div>
+        <div class="flex-container">
+          <mat-checkbox required formControlName="lClean">Toate resursele din laptop (date personale, poze, video, aplicatii, etc.) au fost salvate si sterse</mat-checkbox>
+          <mat-error *ngIf="hasErrorCheckBox(formLaptop, 'lClean', 'required')">Toate datele vor fi pierdute</mat-error>
+        </div>
+        <div class="flex-container">
+          <mat-checkbox required formControlName="lAccess">Sistemul de operare a fost resetat, parola de access a fost inlaturata (sau schimbata in "tablainmultirii")  -
+            <a href="https://www.digitalcitizen.ro/resetezi-windows-10-setarile-fabrica-stergi-datele" rel="noopener noreferrer"
+               target="_blank">Ghid Windows 10</a></mat-checkbox>
+          <mat-error *ngIf="hasErrorCheckBox(formLaptop, 'lAccess', 'required')">Pentru a facilita transferul</mat-error>
+        </div>
+      </form>
+
+    </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="selectedOption('tablet')" #tabletPanel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-radio-button value="tablet"><span [class.option-selected]="selection === 'tablet'">Tableta</span></mat-radio-button>
+        </mat-panel-title>
+        <mat-panel-description>
+          <span></span>
+          <span [class.option-selected]="selection === 'tablet'"><fa-icon icon="tablet"></fa-icon></span>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <form [formGroup]="formTablet">
+        <div class="flex-container">
+          <mat-form-field class="full-width-input-field" >
+            <mat-label>Marca</mat-label>
+            <input matInput #tMake maxlength="50" placeholder="Samsung, Apple, ..." required formControlName="tMake">
+            <mat-hint align="end">{{tMake.value ? tMake.value.length + '/50' : '' }}</mat-hint>
+            <mat-error *ngIf="hasError(formTablet, 'tMake', 'required')">Marca este necesara</mat-error>
+            <mat-error *ngIf="hasError(formTablet, 'tMake', 'maxlength')">Prea multe caractere</mat-error>
+          </mat-form-field>
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Model</mat-label>
+            <input matInput #tModel maxlength="50" placeholder="A2, Ipad Pro 2" formControlName="tModel">
+            <mat-hint align="end">{{lModel.value ? tModel.value.length + '/50' : 'Daca este cunoscut' }}</mat-hint>
+            <mat-error *ngIf="hasError(formTablet, 'tModel', 'maxlength')">Prea multe caractere</mat-error>
+          </mat-form-field>
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Anul</mat-label>
+            <mat-select required formControlName="tYear">
+              <mat-option value="2020">2020</mat-option>
+              <mat-option value="2019">2019</mat-option>
+              <mat-option value="2018">2018</mat-option>
+              <mat-option value="2017">2017</mat-option>
+              <mat-option value="2016">2016</mat-option>
+              <mat-option value="2015">2015</mat-option>
+            </mat-select>
+            <mat-hint align="end">Pana la 5 ani vechime</mat-hint>
+            <mat-error *ngIf="hasError(formTablet, 'tYear', 'required')">Anul este necesar</mat-error>
+          </mat-form-field>
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Diagonala</mat-label>
+            <mat-select #tScreen formControlName="tScreen">
+              <mat-option value="-7">< 7"</mat-option>
+              <mat-option value="7-10">7"-10"</mat-option>
+              <mat-option value=">10">> 10"</mat-option>
+            </mat-select>
+            <mat-hint align="end">Daca se cunoasate</mat-hint>
+          </mat-form-field>
+        </div>
+        <div class="flex-container">
+          <mat-checkbox required formControlName="tFct">Tableta este functionala, are incarcator si baterie (min. 30min), nu are ecranul spart</mat-checkbox>
+          <mat-error *ngIf="hasErrorCheckBox(formTablet, 'tFct', 'required')">Se pot dona doar electronice functionale</mat-error>
+        </div>
+        <div class="flex-container">
+          <mat-checkbox required formControlName="tClean">Toate resursele din tableta (date personale, poze, video, aplicatii, etc.) au fost salvate si sterse</mat-checkbox>
+          <mat-error *ngIf="hasErrorCheckBox(formTablet, 'tClean', 'required')">Toate datele vor fi pierdute</mat-error>
+        </div>
+        <div class="flex-container">
+          <mat-checkbox required formControlName="tAccess">Sistemul de operare a fost resetat, parola de access a fost inlaturata</mat-checkbox>
+          <mat-error *ngIf="hasErrorCheckBox(formTablet, 'tAccess', 'required')">Pentru a facilita transferul</mat-error>
+        </div>
+      </form>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel (opened)="selectedOption('phone')" #phonePanel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          <mat-radio-button value="phone"><span [class.option-selected]="selection === 'phone'">Telefon</span></mat-radio-button>
+        </mat-panel-title>
+        <mat-panel-description>
+          <span></span>
+          <span [class.option-selected]="selection === 'phone'"><fa-icon icon="mobile"></fa-icon></span>
+        </mat-panel-description>
+      </mat-expansion-panel-header>
+
+      <form [formGroup]="formPhone">
+        <div class="flex-container">
+          <mat-form-field class="full-width-input-field" >
+            <mat-label>Marca</mat-label>
+            <input matInput #pMake maxlength="50" placeholder="Samsung, Apple, ..." required formControlName="pMake">
+            <mat-hint align="end">{{pMake.value ? pMake.value.length + '/50' : '' }}</mat-hint>
+            <mat-error *ngIf="hasError(formPhone, 'pMake', 'required')">Marca este necesara</mat-error>
+            <mat-error *ngIf="hasError(formPhone, 'pMake', 'maxlength')">Prea multe caractere</mat-error>
+          </mat-form-field>
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Model</mat-label>
+            <input matInput #pModel maxlength="50" placeholder="A2, Ipad Pro 2" formControlName="pModel">
+            <mat-hint align="end">{{pModel.value ? pModel.value.length + '/50' : 'Daca este cunoscut' }}</mat-hint>
+            <mat-error *ngIf="hasError(formPhone, 'pModel', 'maxlength')">Prea multe caractere</mat-error>
+          </mat-form-field>
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Anul</mat-label>
+            <mat-select required formControlName="pYear">
+              <mat-option value="2020">2020</mat-option>
+              <mat-option value="2019">2019</mat-option>
+              <mat-option value="2018">2018</mat-option>
+              <mat-option value="2017">2017</mat-option>
+              <mat-option value="2016">2016</mat-option>
+              <mat-option value="2015">2015</mat-option>
+            </mat-select>
+            <mat-hint align="end">Pana la 5 ani vechime</mat-hint>
+            <mat-error *ngIf="hasError(formPhone, 'pYear', 'required')">Anul este necesar</mat-error>
+          </mat-form-field>
+          <mat-form-field class="full-width-input-field">
+            <mat-label>Diagonala</mat-label>
+            <mat-select #pScreen formControlName="pScreen">
+              <mat-option value="-7">< 7"</mat-option>
+              <mat-option value="7-10">7"-10"</mat-option>
+              <mat-option value=">10">> 10"</mat-option>
+            </mat-select>
+            <mat-hint align="end">Daca se cunoasate</mat-hint>
+          </mat-form-field>
+        </div>
+        <div class="flex-container">
+          <mat-checkbox required formControlName="pFct">Telefonul este functional, are incarcator si baterie (min. 30min), nu are ecranul spart</mat-checkbox>
+          <mat-error *ngIf="hasErrorCheckBox(formPhone, 'pFct', 'required')">Se pot dona doar electronice functionale</mat-error>
+        </div>
+        <div class="flex-container">
+          <mat-checkbox required formControlName="pClean">Toate resursele din telefon (date personale, poze, video, aplicatii, etc.) au fost salvate si sterse</mat-checkbox>
+          <mat-error *ngIf="hasErrorCheckBox(formPhone, 'pClean', 'required')">Toate datele vor fi pierdute</mat-error>
+        </div>
+        <div class="flex-container">
+          <mat-checkbox required formControlName="pAccess">Sistemul de operare a fost resetat, parola de access a fost inlaturata</mat-checkbox>
+          <mat-error *ngIf="hasErrorCheckBox(formPhone, 'pAccess', 'required')">Pentru a facilita transferul</mat-error>
+        </div>
+      </form>
+
+    </mat-expansion-panel>
+
+
+
+
+
+  </mat-accordion>
+</mat-radio-group>
+<p style="font-size:0.7em; font-style: italic; padding:0.75em">Toate cele 3 conditii trebuie indeplinite la momentul livrarii catre partener. Te rugam sa confirmi inainte de a merge mai departe.</p>

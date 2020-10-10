@@ -1,0 +1,83 @@
+<div class="background">
+  <div class="gradient">
+    <div class="container">
+      <h1>Tableta inmultirii</h1>
+      <h3 style="text-align:center">Pana in acest moment avem donate</h3>
+      <div class="actions">
+        <a mat-raised-button class="actions-main" color="primary" [ngClass]="routeAnimationsElements">
+          Laptopuri: {{laptops}}<span style="font-size: 1.75em;padding: 0; padding-bottom: 7px;">&#9786;</span>
+        </a>
+        <a mat-raised-button class="actions-main" color="accent" [ngClass]="routeAnimationsElements">
+          Tablete: {{tablets}}<span style="font-size: 1.75em;padding: 0; padding-bottom: 7px;">&#9786;</span>
+        </a>
+        <a mat-raised-button class="actions-main" color="warn" [ngClass]="routeAnimationsElements">
+          Telefoane: {{phones}}<span style="font-size: 1.75em;padding: 0; padding-bottom: 7px;">&#9786;</span>
+        </a>
+      </div>
+    </div>
+    <div class="container">
+      <div class="follow-releases" [ngClass]="routeAnimationsElements">
+        <h2>Cum pot sa ajut</h2>
+        <p rtl>
+          Din ce in ce mai multe scoli opteaza pentru clase online, fortate de pandemia COVID-19. Multi dintre elevi nu au access
+          la un dispozitiv care sa le permita invatarea online.
+        </p>
+        <p style="font-weight:bolder">
+          Daca ai acasa <code>un laptop</code>, <code>o tableta</code> sau <code>un telefon</code> pe care nu le mai folosesti,
+          le poti dona pentru unul dintre copiii care merg la scoala si nu au posibilitatea sa achizitioneze unul.
+        </p>
+        <div class="container">
+          <div class="actions">
+            <a mat-raised-button class="actions-main" color="warn"
+               [ngClass]="routeAnimationsElements"
+               routerLink="../donate">
+              Vreau sa &nbsp;ajut
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="container" style="background: white; padding: 1em">
+    <h1 style="font-size:1.5em">Crează propria tablă desenată</h1>
+    <p style="text-align: center">
+      Contribuie și tu la răspândirea mesajului cu <code>propria tablă desenată</code>.
+    </p>
+    <p style="text-align: center">
+      Donează laptopul, tableta sau telefonul vechi pe <b>Tableta Înmulțirii</b> pentru <code>Educație digitală cu șanse egale</code>!
+    </p>
+    <div class="fullwidth">
+      <img src="assets/promo.png" class="imgclass s3"/>
+      <div class="fullwidth buttons">
+        <a mat-raised-button routerLink="/share/customize" color="primary" ><fa-icon icon="camera" style="margin-right: 0.25em"></fa-icon>Incearca</a>
+      </div>
+    </div>
+  </div>
+
+
+<div class="container" rtl style="margin-top: 15px;">
+  <div class="contributors" [ngClass]="routeAnimationsElements">
+    <h2>Parteneri</h2>
+    <div class="contributors-wrapper">
+
+      <!-- ALL-CONTRIBUTORS-LIST:START -->
+  <a class="contributor" [href]="partner.link" rel="noopener noreferrer" target="_blank" *ngFor="let partner of partners">
+    <img alt [src]="partner.photo">
+    <span>{{partner.name}}</span>
+  </a>
+      <!-- ALL-CONTRIBUTORS-LIST:END -->
+
+    </div>
+    <p>Acest proiect este derulat cu ajutorul partenerilor pentru identificarea cazurilor si distribuirea donatiilor.</p>
+    <div class="container actions" style="text-align: center">
+        <a mat-raised-button
+           [ngClass]="routeAnimationsElements"
+           routerLink="../user-forms/partner/sign-up">
+          Vreau sa ma implic
+        </a>
+    </div>
+  </div>
+</div>

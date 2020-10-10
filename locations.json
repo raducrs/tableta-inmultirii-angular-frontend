@@ -1,0 +1,2530 @@
+[
+	{
+		"locId": "1",
+		"name": "Aiud",
+		"description": "Aiud, judeţul Alba",
+		"search": "aiud, judetul alba",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "2",
+		"name": "Blaj",
+		"description": "Blaj, judeţul Alba",
+		"search": "blaj, judetul alba",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "3",
+		"name": "Sebeș",
+		"description": "Sebeș, judeţul Alba",
+		"search": "sebes, judetul alba",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "4",
+		"name": "Alba Iulia",
+		"description": "Alba Iulia, judeţul Alba",
+		"search": "alba iulia, judetul alba",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "5",
+		"name": "Abrud",
+		"description": "Abrud, judeţul Alba",
+		"search": "abrud, judetul alba",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "6",
+		"name": "Baia de Arieș",
+		"description": "Baia de Arieș, judeţul Alba",
+		"search": "baia de aries, judetul alba",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "7",
+		"name": "Câmpeni",
+		"description": "Câmpeni, judeţul Alba",
+		"search": "campeni, judetul alba",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "8",
+		"name": "Cugir",
+		"description": "Cugir, judeţul Alba",
+		"search": "cugir, judetul alba",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "9",
+		"name": "Ocna Mureș",
+		"description": "Ocna Mureș, judeţul Alba",
+		"search": "ocna mures, judetul alba",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "10",
+		"name": "Teiuș",
+		"description": "Teiuș, judeţul Alba",
+		"search": "teius, judetul alba",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "11",
+		"name": "Zlatna",
+		"description": "Zlatna, judeţul Alba",
+		"search": "zlatna, judetul alba",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "12",
+		"name": "Arad",
+		"description": "Arad, judeţul Arad",
+		"search": "arad, judetul arad",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "13",
+		"name": "Chișineu-Criș",
+		"description": "Chișineu-Criș, judeţul Arad",
+		"search": "chisineu-cris, judetul arad",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "14",
+		"name": "Ineu",
+		"description": "Ineu, judeţul Arad",
+		"search": "ineu, judetul arad",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "15",
+		"name": "Lipova",
+		"description": "Lipova, judeţul Arad",
+		"search": "lipova, judetul arad",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "16",
+		"name": "Pâncota",
+		"description": "Pâncota, judeţul Arad",
+		"search": "pancota, judetul arad",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "17",
+		"name": "Sântana",
+		"description": "Sântana, judeţul Arad",
+		"search": "santana, judetul arad",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "18",
+		"name": "Sebiș",
+		"description": "Sebiș, judeţul Arad",
+		"search": "sebis, judetul arad",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "19",
+		"name": "Curtici",
+		"description": "Curtici, judeţul Arad",
+		"search": "curtici, judetul arad",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "20",
+		"name": "Pecica",
+		"description": "Pecica, judeţul Arad",
+		"search": "pecica, judetul arad",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "21",
+		"name": "Nădlac",
+		"description": "Nădlac, judeţul Arad",
+		"search": "nadlac, judetul arad",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "22",
+		"name": "Câmpulung",
+		"description": "Câmpulung, judeţul Argeș",
+		"search": "campulung, judetul arges",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "23",
+		"name": "Curtea de Argeș",
+		"description": "Curtea de Argeș, judeţul Argeș",
+		"search": "curtea de arges, judetul arges",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "24",
+		"name": "Pitești",
+		"description": "Pitești, judeţul Argeș",
+		"search": "pitesti, judetul arges",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "25",
+		"name": "Costești",
+		"description": "Costești, judeţul Argeș",
+		"search": "costesti, judetul arges",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "26",
+		"name": "Mioveni",
+		"description": "Mioveni, judeţul Argeș",
+		"search": "mioveni, judetul arges",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "27",
+		"name": "Ștefănești",
+		"description": "Ștefănești, judeţul Argeș",
+		"search": "stefanesti, judetul arges",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "28",
+		"name": "Topoloveni",
+		"description": "Topoloveni, judeţul Argeș",
+		"search": "topoloveni, judetul arges",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "29",
+		"name": "Moinești",
+		"description": "Moinești, judeţul Bacău",
+		"search": "moinesti, judetul bacau",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "30",
+		"name": "Onești",
+		"description": "Onești, judeţul Bacău",
+		"search": "onesti, judetul bacau",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "31",
+		"name": "Bacău",
+		"description": "Bacău, judeţul Bacău",
+		"search": "bacau, judetul bacau",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "32",
+		"name": "Buhuși",
+		"description": "Buhuși, judeţul Bacău",
+		"search": "buhusi, judetul bacau",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "33",
+		"name": "Comănești",
+		"description": "Comănești, judeţul Bacău",
+		"search": "comanesti, judetul bacau",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "34",
+		"name": "Dărmănești",
+		"description": "Dărmănești, judeţul Bacău",
+		"search": "darmanesti, judetul bacau",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "35",
+		"name": "Slănic-Moldova",
+		"description": "Slănic-Moldova, judeţul Bacău",
+		"search": "slanic-moldova, judetul bacau",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "36",
+		"name": "Târgu Ocna",
+		"description": "Târgu Ocna, judeţul Bacău",
+		"search": "targu ocna, judetul bacau",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "37",
+		"name": "Beiuș",
+		"description": "Beiuș, judeţul Bihor",
+		"search": "beius, judetul bihor",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "38",
+		"name": "Marghita",
+		"description": "Marghita, judeţul Bihor",
+		"search": "marghita, judetul bihor",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "39",
+		"name": "Salonta",
+		"description": "Salonta, judeţul Bihor",
+		"search": "salonta, judetul bihor",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "40",
+		"name": "Oradea",
+		"description": "Oradea, judeţul Bihor",
+		"search": "oradea, judetul bihor",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "41",
+		"name": "Aleșd",
+		"description": "Aleșd, judeţul Bihor",
+		"search": "alesd, judetul bihor",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "42",
+		"name": "Vașcău",
+		"description": "Vașcău, judeţul Bihor",
+		"search": "vascau, judetul bihor",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "43",
+		"name": "Ștei",
+		"description": "Ștei, judeţul Bihor",
+		"search": "stei, judetul bihor",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "44",
+		"name": "Săcueni",
+		"description": "Săcueni, judeţul Bihor",
+		"search": "sacueni, judetul bihor",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "45",
+		"name": "Valea lui Mihai",
+		"description": "Valea lui Mihai, judeţul Bihor",
+		"search": "valea lui mihai, judetul bihor",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "46",
+		"name": "Bistrița",
+		"description": "Bistrița, judeţul Bistrița-Năsăud",
+		"search": "bistrita, judetul bistrita-nasaud",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "47",
+		"name": "Beclean",
+		"description": "Beclean, judeţul Bistrița-Năsăud",
+		"search": "beclean, judetul bistrita-nasaud",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "48",
+		"name": "Năsăud",
+		"description": "Năsăud, judeţul Bistrița-Năsăud",
+		"search": "nasaud, judetul bistrita-nasaud",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "49",
+		"name": "Sângeorz-Băi",
+		"description": "Sângeorz-Băi, judeţul Bistrița-Năsăud",
+		"search": "sangeorz-bai, judetul bistrita-nasaud",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "50",
+		"name": "Dorohoi",
+		"description": "Dorohoi, judeţul Botoșani",
+		"search": "dorohoi, judetul botosani",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "51",
+		"name": "Botoșani",
+		"description": "Botoșani, judeţul Botoșani",
+		"search": "botosani, judetul botosani",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "52",
+		"name": "Bucecea",
+		"description": "Bucecea, judeţul Botoșani",
+		"search": "bucecea, judetul botosani",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "53",
+		"name": "Darabani",
+		"description": "Darabani, judeţul Botoșani",
+		"search": "darabani, judetul botosani",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "54",
+		"name": "Flămânzi",
+		"description": "Flămânzi, judeţul Botoșani",
+		"search": "flamanzi, judetul botosani",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "55",
+		"name": "Săveni",
+		"description": "Săveni, judeţul Botoșani",
+		"search": "saveni, judetul botosani",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "56",
+		"name": "Ștefănești",
+		"description": "Ștefănești, judeţul Botoșani",
+		"search": "stefanesti, judetul botosani",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "57",
+		"name": "Codlea",
+		"description": "Codlea, judeţul Brașov",
+		"search": "codlea, judetul brasov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "58",
+		"name": "Făgăraș",
+		"description": "Făgăraș, judeţul Brașov",
+		"search": "fagaras, judetul brasov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "59",
+		"name": "Săcele",
+		"description": "Săcele, judeţul Brașov",
+		"search": "sacele, judetul brasov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "60",
+		"name": "Brașov",
+		"description": "Brașov, judeţul Brașov",
+		"search": "brasov, judetul brasov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "61",
+		"name": "Ghimbav",
+		"description": "Ghimbav, judeţul Brașov",
+		"search": "ghimbav, judetul brasov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "62",
+		"name": "Predeal",
+		"description": "Predeal, judeţul Brașov",
+		"search": "predeal, judetul brasov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "63",
+		"name": "Râșnov",
+		"description": "Râșnov, judeţul Brașov",
+		"search": "rasnov, judetul brasov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "64",
+		"name": "Rupea",
+		"description": "Rupea, judeţul Brașov",
+		"search": "rupea, judetul brasov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "65",
+		"name": "Victoria",
+		"description": "Victoria, judeţul Brașov",
+		"search": "victoria, judetul brasov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "66",
+		"name": "Zărnești",
+		"description": "Zărnești, judeţul Brașov",
+		"search": "zarnesti, judetul brasov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "67",
+		"name": "Brăila",
+		"description": "Brăila, judeţul Brăila",
+		"search": "braila, judetul braila",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "68",
+		"name": "Făurei",
+		"description": "Făurei, judeţul Brăila",
+		"search": "faurei, judetul braila",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "69",
+		"name": "Ianca",
+		"description": "Ianca, judeţul Brăila",
+		"search": "ianca, judetul braila",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "70",
+		"name": "Însurăței",
+		"description": "Însurăței, judeţul Brăila",
+		"search": "insuratei, judetul braila",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "71",
+		"name": "Râmnicu Sărat",
+		"description": "Râmnicu Sărat, judeţul Buzău",
+		"search": "ramnicu sarat, judetul buzau",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "72",
+		"name": "Buzău",
+		"description": "Buzău, judeţul Buzău",
+		"search": "buzau, judetul buzau",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "73",
+		"name": "Nehoiu",
+		"description": "Nehoiu, judeţul Buzău",
+		"search": "nehoiu, judetul buzau",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "74",
+		"name": "Pogoanele",
+		"description": "Pogoanele, judeţul Buzău",
+		"search": "pogoanele, judetul buzau",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "75",
+		"name": "Pătârlagele",
+		"description": "Pătârlagele, judeţul Buzău",
+		"search": "patarlagele, judetul buzau",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "76",
+		"name": "Caransebeș",
+		"description": "Caransebeș, judeţul Caraș-Severin",
+		"search": "caransebes, judetul caras-severin",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "77",
+		"name": "Reșița",
+		"description": "Reșița, judeţul Caraș-Severin",
+		"search": "resita, judetul caras-severin",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "78",
+		"name": "Anina",
+		"description": "Anina, judeţul Caraș-Severin",
+		"search": "anina, judetul caras-severin",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "79",
+		"name": "Băile Herculane",
+		"description": "Băile Herculane, judeţul Caraș-Severin",
+		"search": "baile herculane, judetul caras-severin",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "80",
+		"name": "Bocșa",
+		"description": "Bocșa, judeţul Caraș-Severin",
+		"search": "bocsa, judetul caras-severin",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "81",
+		"name": "Oravița",
+		"description": "Oravița, judeţul Caraș-Severin",
+		"search": "oravita, judetul caras-severin",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "82",
+		"name": "Oțelu Roșu",
+		"description": "Oțelu Roșu, judeţul Caraș-Severin",
+		"search": "otelu rosu, judetul caras-severin",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "83",
+		"name": "Moldova Nouă",
+		"description": "Moldova Nouă, judeţul Caraș-Severin",
+		"search": "moldova noua, judetul caras-severin",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "84",
+		"name": "Oltenița",
+		"description": "Oltenița, judeţul Călărași",
+		"search": "oltenita, judetul calarasi",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "85",
+		"name": "Călărași",
+		"description": "Călărași, judeţul Călărași",
+		"search": "calarasi, judetul calarasi",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "86",
+		"name": "Budești",
+		"description": "Budești, judeţul Călărași",
+		"search": "budesti, judetul calarasi",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "87",
+		"name": "Fundulea",
+		"description": "Fundulea, judeţul Călărași",
+		"search": "fundulea, judetul calarasi",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "88",
+		"name": "Lehliu Gară",
+		"description": "Lehliu Gară, judeţul Călărași",
+		"search": "lehliu gara, judetul calarasi",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "89",
+		"name": "Câmpia Turzii",
+		"description": "Câmpia Turzii, judeţul Cluj",
+		"search": "campia turzii, judetul cluj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "90",
+		"name": "Dej",
+		"description": "Dej, judeţul Cluj",
+		"search": "dej, judetul cluj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "91",
+		"name": "Gherla",
+		"description": "Gherla, judeţul Cluj",
+		"search": "gherla, judetul cluj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "92",
+		"name": "Turda",
+		"description": "Turda, judeţul Cluj",
+		"search": "turda, judetul cluj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "93",
+		"name": "Cluj-Napoca",
+		"description": "Cluj-Napoca, judeţul Cluj",
+		"search": "cluj-napoca, judetul cluj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "94",
+		"name": "Mangalia",
+		"description": "Mangalia, judeţul Constanța",
+		"search": "mangalia, judetul constanta",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "95",
+		"name": "Medgidia",
+		"description": "Medgidia, judeţul Constanța",
+		"search": "medgidia, judetul constanta",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "96",
+		"name": "Constanța",
+		"description": "Constanța, judeţul Constanța",
+		"search": "constanta, judetul constanta",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "97",
+		"name": "Cernavodă",
+		"description": "Cernavodă, judeţul Constanța",
+		"search": "cernavoda, judetul constanta",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "98",
+		"name": "Eforie",
+		"description": "Eforie, judeţul Constanța",
+		"search": "eforie, judetul constanta",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "99",
+		"name": "Hârșova",
+		"description": "Hârșova, judeţul Constanța",
+		"search": "harsova, judetul constanta",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "100",
+		"name": "Năvodari",
+		"description": "Năvodari, judeţul Constanța",
+		"search": "navodari, judetul constanta",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "101",
+		"name": "Ovidiu",
+		"description": "Ovidiu, judeţul Constanța",
+		"search": "ovidiu, judetul constanta",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "102",
+		"name": "Techirghiol",
+		"description": "Techirghiol, judeţul Constanța",
+		"search": "techirghiol, judetul constanta",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "103",
+		"name": "Negru Vodă",
+		"description": "Negru Vodă, judeţul Constanța",
+		"search": "negru voda, judetul constanta",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "104",
+		"name": "Târgu Secuiesc",
+		"description": "Târgu Secuiesc, judeţul Covasna",
+		"search": "targu secuiesc, judetul covasna",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "105",
+		"name": "Sfântu Gheorghe",
+		"description": "Sfântu Gheorghe, judeţul Covasna",
+		"search": "sfantu gheorghe, judetul covasna",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "106",
+		"name": "Baraolt",
+		"description": "Baraolt, judeţul Covasna",
+		"search": "baraolt, judetul covasna",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "107",
+		"name": "Covasna",
+		"description": "Covasna, judeţul Covasna",
+		"search": "covasna, judetul covasna",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "108",
+		"name": "Întorsura Buzăului",
+		"description": "Întorsura Buzăului, judeţul Covasna",
+		"search": "intorsura buzaului, judetul covasna",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "109",
+		"name": "Moreni",
+		"description": "Moreni, judeţul Dâmbovița",
+		"search": "moreni, judetul dambovita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "110",
+		"name": "Târgoviște",
+		"description": "Târgoviște, judeţul Dâmbovița",
+		"search": "targoviste, judetul dambovita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "111",
+		"name": "Fieni",
+		"description": "Fieni, judeţul Dâmbovița",
+		"search": "fieni, judetul dambovita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "112",
+		"name": "Găești",
+		"description": "Găești, judeţul Dâmbovița",
+		"search": "gaesti, judetul dambovita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "113",
+		"name": "Pucioasa",
+		"description": "Pucioasa, judeţul Dâmbovița",
+		"search": "pucioasa, judetul dambovita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "114",
+		"name": "Răcari",
+		"description": "Răcari, judeţul Dâmbovița",
+		"search": "racari, judetul dambovita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "115",
+		"name": "Titu",
+		"description": "Titu, judeţul Dâmbovița",
+		"search": "titu, judetul dambovita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "116",
+		"name": "Băilești",
+		"description": "Băilești, judeţul Dolj",
+		"search": "bailesti, judetul dolj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "117",
+		"name": "Calafat",
+		"description": "Calafat, judeţul Dolj",
+		"search": "calafat, judetul dolj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "118",
+		"name": "Craiova",
+		"description": "Craiova, judeţul Dolj",
+		"search": "craiova, judetul dolj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "119",
+		"name": "Dăbuleni",
+		"description": "Dăbuleni, judeţul Dolj",
+		"search": "dabuleni, judetul dolj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "120",
+		"name": "Filiași",
+		"description": "Filiași, judeţul Dolj",
+		"search": "filiasi, judetul dolj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "121",
+		"name": "Segarcea",
+		"description": "Segarcea, judeţul Dolj",
+		"search": "segarcea, judetul dolj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "122",
+		"name": "Bechet",
+		"description": "Bechet, judeţul Dolj",
+		"search": "bechet, judetul dolj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "123",
+		"name": "Galați",
+		"description": "Galați, judeţul Galați",
+		"search": "galati, judetul galati",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "124",
+		"name": "Berești",
+		"description": "Berești, judeţul Galați",
+		"search": "beresti, judetul galati",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "125",
+		"name": "Tecuci",
+		"description": "Tecuci, judeţul Galați",
+		"search": "tecuci, judetul galati",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "126",
+		"name": "Târgu Bujor",
+		"description": "Târgu Bujor, judeţul Galați",
+		"search": "targu bujor, judetul galati",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "127",
+		"name": "Giurgiu",
+		"description": "Giurgiu, judeţul Giurgiu",
+		"search": "giurgiu, judetul giurgiu",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "128",
+		"name": "Bolintin-Vale",
+		"description": "Bolintin-Vale, judeţul Giurgiu",
+		"search": "bolintin-vale, judetul giurgiu",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "129",
+		"name": "Mihăilești",
+		"description": "Mihăilești, judeţul Giurgiu",
+		"search": "mihailesti, judetul giurgiu",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "130",
+		"name": "Motru",
+		"description": "Motru, judeţul Gorj",
+		"search": "motru, judetul gorj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "131",
+		"name": "Târgu Jiu",
+		"description": "Târgu Jiu, judeţul Gorj",
+		"search": "targu jiu, judetul gorj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "132",
+		"name": "Bumbești-Jiu",
+		"description": "Bumbești-Jiu, judeţul Gorj",
+		"search": "bumbesti-jiu, judetul gorj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "133",
+		"name": "Novaci",
+		"description": "Novaci, judeţul Gorj",
+		"search": "novaci, judetul gorj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "134",
+		"name": "Rovinari",
+		"description": "Rovinari, judeţul Gorj",
+		"search": "rovinari, judetul gorj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "135",
+		"name": "Târgu Cărbunești",
+		"description": "Târgu Cărbunești, judeţul Gorj",
+		"search": "targu carbunesti, judetul gorj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "136",
+		"name": "Tismana",
+		"description": "Tismana, judeţul Gorj",
+		"search": "tismana, judetul gorj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "137",
+		"name": "Turceni",
+		"description": "Turceni, judeţul Gorj",
+		"search": "turceni, judetul gorj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "138",
+		"name": "Țicleni",
+		"description": "Țicleni, judeţul Gorj",
+		"search": "ticleni, judetul gorj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "139",
+		"name": "Gheorgheni",
+		"description": "Gheorgheni, judeţul Hargita",
+		"search": "gheorgheni, judetul hargita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "140",
+		"name": "Odorheiu Secuiesc",
+		"description": "Odorheiu Secuiesc, judeţul Hargita",
+		"search": "odorheiu secuiesc, judetul hargita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "141",
+		"name": "Toplița",
+		"description": "Toplița, judeţul Hargita",
+		"search": "toplita, judetul hargita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "142",
+		"name": "Miercurea Ciuc",
+		"description": "Miercurea Ciuc, judeţul Hargita",
+		"search": "miercurea ciuc, judetul hargita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "143",
+		"name": "Băile Tușnad",
+		"description": "Băile Tușnad, judeţul Hargita",
+		"search": "baile tusnad, judetul hargita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "144",
+		"name": "Bălan",
+		"description": "Bălan, judeţul Hargita",
+		"search": "balan, judetul hargita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "145",
+		"name": "Borsec",
+		"description": "Borsec, judeţul Hargita",
+		"search": "borsec, judetul hargita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "146",
+		"name": "Cristuru Secuiesc",
+		"description": "Cristuru Secuiesc, judeţul Hargita",
+		"search": "cristuru secuiesc, judetul hargita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "147",
+		"name": "Vlăhița",
+		"description": "Vlăhița, judeţul Hargita",
+		"search": "vlahita, judetul hargita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "148",
+		"name": "Brad",
+		"description": "Brad, judeţul Hunedoara",
+		"search": "brad, judetul hunedoara",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "149",
+		"name": "Hunedoara",
+		"description": "Hunedoara, judeţul Hunedoara",
+		"search": "hunedoara, judetul hunedoara",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "150",
+		"name": "Lupeni",
+		"description": "Lupeni, judeţul Hunedoara",
+		"search": "lupeni, judetul hunedoara",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "151",
+		"name": "Orăștie",
+		"description": "Orăștie, judeţul Hunedoara",
+		"search": "orastie, judetul hunedoara",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "152",
+		"name": "Petroșani",
+		"description": "Petroșani, judeţul Hunedoara",
+		"search": "petrosani, judetul hunedoara",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "153",
+		"name": "Vulcan",
+		"description": "Vulcan, judeţul Hunedoara",
+		"search": "vulcan, judetul hunedoara",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "154",
+		"name": "Deva",
+		"description": "Deva, judeţul Hunedoara",
+		"search": "deva, judetul hunedoara",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "155",
+		"name": "Aninoasa",
+		"description": "Aninoasa, judeţul Hunedoara",
+		"search": "aninoasa, judetul hunedoara",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "156",
+		"name": "Călan",
+		"description": "Călan, judeţul Hunedoara",
+		"search": "calan, judetul hunedoara",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "157",
+		"name": "Geoagiu",
+		"description": "Geoagiu, judeţul Hunedoara",
+		"search": "geoagiu, judetul hunedoara",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "158",
+		"name": "Hațeg",
+		"description": "Hațeg, judeţul Hunedoara",
+		"search": "hateg, judetul hunedoara",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "159",
+		"name": "Petrila",
+		"description": "Petrila, judeţul Hunedoara",
+		"search": "petrila, judetul hunedoara",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "160",
+		"name": "Simeria",
+		"description": "Simeria, judeţul Hunedoara",
+		"search": "simeria, judetul hunedoara",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "161",
+		"name": "Uricani",
+		"description": "Uricani, judeţul Hunedoara",
+		"search": "uricani, judetul hunedoara",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "162",
+		"name": "Fetești",
+		"description": "Fetești, judeţul Ialomița",
+		"search": "fetesti, judetul ialomita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "163",
+		"name": "Urziceni",
+		"description": "Urziceni, judeţul Ialomița",
+		"search": "urziceni, judetul ialomita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "164",
+		"name": "Slobozia",
+		"description": "Slobozia, judeţul Ialomița",
+		"search": "slobozia, judetul ialomita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "165",
+		"name": "Amara",
+		"description": "Amara, judeţul Ialomița",
+		"search": "amara, judetul ialomita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "166",
+		"name": "Căzănești",
+		"description": "Căzănești, judeţul Ialomița",
+		"search": "cazanesti, judetul ialomita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "167",
+		"name": "Fierbinți-Târg",
+		"description": "Fierbinți-Târg, judeţul Ialomița",
+		"search": "fierbinti-targ, judetul ialomita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "168",
+		"name": "Țăndărei",
+		"description": "Țăndărei, judeţul Ialomița",
+		"search": "tandarei, judetul ialomita",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "169",
+		"name": "Iași",
+		"description": "Iași, judeţul Iași",
+		"search": "iasi, judetul iasi",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "170",
+		"name": "Pașcani",
+		"description": "Pașcani, judeţul Iași",
+		"search": "pascani, judetul iasi",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "171",
+		"name": "Hârlău",
+		"description": "Hârlău, judeţul Iași",
+		"search": "harlau, judetul iasi",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "172",
+		"name": "Podu Iloaiei",
+		"description": "Podu Iloaiei, judeţul Iași",
+		"search": "podu iloaiei, judetul iasi",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "173",
+		"name": "Târgu Frumos",
+		"description": "Târgu Frumos, judeţul Iași",
+		"search": "targu frumos, judetul iasi",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "174",
+		"name": "Bragadiru",
+		"description": "Bragadiru, judeţul Ilfov",
+		"search": "bragadiru, judetul ilfov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "175",
+		"name": "Buftea",
+		"description": "Buftea, judeţul Ilfov",
+		"search": "buftea, judetul ilfov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "176",
+		"name": "Chitila",
+		"description": "Chitila, judeţul Ilfov",
+		"search": "chitila, judetul ilfov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "177",
+		"name": "Măgurele",
+		"description": "Măgurele, judeţul Ilfov",
+		"search": "magurele, judetul ilfov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "178",
+		"name": "Otopeni",
+		"description": "Otopeni, judeţul Ilfov",
+		"search": "otopeni, judetul ilfov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "179",
+		"name": "Pantelimon",
+		"description": "Pantelimon, judeţul Ilfov",
+		"search": "pantelimon, judetul ilfov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "180",
+		"name": "Popești-Leordeni",
+		"description": "Popești-Leordeni, judeţul Ilfov",
+		"search": "popesti-leordeni, judetul ilfov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "181",
+		"name": "Voluntari",
+		"description": "Voluntari, judeţul Ilfov",
+		"search": "voluntari, judetul ilfov",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "182",
+		"name": "Sighetu Marmației",
+		"description": "Sighetu Marmației, judeţul Maramureș",
+		"search": "sighetu marmatiei, judetul maramures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "183",
+		"name": "Baia Mare",
+		"description": "Baia Mare, judeţul Maramureș",
+		"search": "baia mare, judetul maramures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "184",
+		"name": "Baia Sprie",
+		"description": "Baia Sprie, judeţul Maramureș",
+		"search": "baia sprie, judetul maramures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "185",
+		"name": "Borșa",
+		"description": "Borșa, judeţul Maramureș",
+		"search": "borsa, judetul maramures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "186",
+		"name": "Cavnic",
+		"description": "Cavnic, judeţul Maramureș",
+		"search": "cavnic, judetul maramures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "187",
+		"name": "Dragomirești",
+		"description": "Dragomirești, judeţul Maramureș",
+		"search": "dragomiresti, judetul maramures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "188",
+		"name": "Săliștea de Sus",
+		"description": "Săliștea de Sus, judeţul Maramureș",
+		"search": "salistea de sus, judetul maramures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "189",
+		"name": "Seini",
+		"description": "Seini, judeţul Maramureș",
+		"search": "seini, judetul maramures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "190",
+		"name": "Șomcuta Mare",
+		"description": "Șomcuta Mare, judeţul Maramureș",
+		"search": "somcuta mare, judetul maramures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "191",
+		"name": "Tăuții-Măgherăuș",
+		"description": "Tăuții-Măgherăuș, judeţul Maramureș",
+		"search": "tautii-magheraus, judetul maramures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "192",
+		"name": "Târgu Lăpuș",
+		"description": "Târgu Lăpuș, judeţul Maramureș",
+		"search": "targu lapus, judetul maramures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "193",
+		"name": "Ulmeni",
+		"description": "Ulmeni, judeţul Maramureș",
+		"search": "ulmeni, judetul maramures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "194",
+		"name": "Vișeu de Sus",
+		"description": "Vișeu de Sus, judeţul Maramureș",
+		"search": "viseu de sus, judetul maramures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "195",
+		"name": "Orșova",
+		"description": "Orșova, judeţul Mehedinți",
+		"search": "orsova, judetul mehedinti",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "196",
+		"name": "Drobeta-Turnu Severin",
+		"description": "Drobeta-Turnu Severin, judeţul Mehedinți",
+		"search": "drobeta-turnu severin, judetul mehedinti",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "197",
+		"name": "Baia de Aramă",
+		"description": "Baia de Aramă, judeţul Mehedinți",
+		"search": "baia de arama, judetul mehedinti",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "198",
+		"name": "Strehaia",
+		"description": "Strehaia, judeţul Mehedinți",
+		"search": "strehaia, judetul mehedinti",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "199",
+		"name": "Vânju Mare",
+		"description": "Vânju Mare, judeţul Mehedinți",
+		"search": "vanju mare, judetul mehedinti",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "200",
+		"name": "Reghin",
+		"description": "Reghin, judeţul Mureș",
+		"search": "reghin, judetul mures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "201",
+		"name": "Sighișoara",
+		"description": "Sighișoara, judeţul Mureș",
+		"search": "sighisoara, judetul mures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "202",
+		"name": "Târnăveni",
+		"description": "Târnăveni, judeţul Mureș",
+		"search": "tarnaveni, judetul mures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "203",
+		"name": "Târgu Mureș",
+		"description": "Târgu Mureș, judeţul Mureș",
+		"search": "targu mures, judetul mures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "204",
+		"name": "Iernut",
+		"description": "Iernut, judeţul Mureș",
+		"search": "iernut, judetul mures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "205",
+		"name": "Luduș",
+		"description": "Luduș, judeţul Mureș",
+		"search": "ludus, judetul mures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "206",
+		"name": "Miercurea Nirajului",
+		"description": "Miercurea Nirajului, judeţul Mureș",
+		"search": "miercurea nirajului, judetul mures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "207",
+		"name": "Sovata",
+		"description": "Sovata, judeţul Mureș",
+		"search": "sovata, judetul mures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "208",
+		"name": "Sângeorgiu de Pădure",
+		"description": "Sângeorgiu de Pădure, judeţul Mureș",
+		"search": "sangeorgiu de padure, judetul mures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "209",
+		"name": "Sărmașu",
+		"description": "Sărmașu, judeţul Mureș",
+		"search": "sarmasu, judetul mures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "210",
+		"name": "Ungheni",
+		"description": "Ungheni, judeţul Mureș",
+		"search": "ungheni, judetul mures",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "211",
+		"name": "Roman",
+		"description": "Roman, judeţul Neamț",
+		"search": "roman, judetul neamt",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "212",
+		"name": "Piatra Neamț",
+		"description": "Piatra Neamț, judeţul Neamț",
+		"search": "piatra neamt, judetul neamt",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "213",
+		"name": "Bicaz",
+		"description": "Bicaz, judeţul Neamț",
+		"search": "bicaz, judetul neamt",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "214",
+		"name": "Roznov",
+		"description": "Roznov, judeţul Neamț",
+		"search": "roznov, judetul neamt",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "215",
+		"name": "Târgu Neamț",
+		"description": "Târgu Neamț, judeţul Neamț",
+		"search": "targu neamt, judetul neamt",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "216",
+		"name": "Caracal",
+		"description": "Caracal, judeţul Olt",
+		"search": "caracal, judetul olt",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "217",
+		"name": "Slatina",
+		"description": "Slatina, judeţul Olt",
+		"search": "slatina, judetul olt",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "218",
+		"name": "Balș",
+		"description": "Balș, judeţul Olt",
+		"search": "bals, judetul olt",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "219",
+		"name": "Corabia",
+		"description": "Corabia, judeţul Olt",
+		"search": "corabia, judetul olt",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "220",
+		"name": "Drăgănești-Olt",
+		"description": "Drăgănești-Olt, judeţul Olt",
+		"search": "draganesti-olt, judetul olt",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "221",
+		"name": "Piatra-Olt",
+		"description": "Piatra-Olt, judeţul Olt",
+		"search": "piatra-olt, judetul olt",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "222",
+		"name": "Potcoava",
+		"description": "Potcoava, judeţul Olt",
+		"search": "potcoava, judetul olt",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "223",
+		"name": "Scornicești",
+		"description": "Scornicești, judeţul Olt",
+		"search": "scornicesti, judetul olt",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "224",
+		"name": "Câmpina",
+		"description": "Câmpina, judeţul Prahova",
+		"search": "campina, judetul prahova",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "225",
+		"name": "Ploiești",
+		"description": "Ploiești, judeţul Prahova",
+		"search": "ploiesti, judetul prahova",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "226",
+		"name": "Azuga",
+		"description": "Azuga, judeţul Prahova",
+		"search": "azuga, judetul prahova",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "227",
+		"name": "Băicoi",
+		"description": "Băicoi, judeţul Prahova",
+		"search": "baicoi, judetul prahova",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "228",
+		"name": "Boldești-Scăeni",
+		"description": "Boldești-Scăeni, judeţul Prahova",
+		"search": "boldesti-scaeni, judetul prahova",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "229",
+		"name": "Breaza",
+		"description": "Breaza, judeţul Prahova",
+		"search": "breaza, judetul prahova",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "230",
+		"name": "Bușteni",
+		"description": "Bușteni, judeţul Prahova",
+		"search": "busteni, judetul prahova",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "231",
+		"name": "Comarnic",
+		"description": "Comarnic, judeţul Prahova",
+		"search": "comarnic, judetul prahova",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "232",
+		"name": "Mizil",
+		"description": "Mizil, judeţul Prahova",
+		"search": "mizil, judetul prahova",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "233",
+		"name": "Plopeni",
+		"description": "Plopeni, judeţul Prahova",
+		"search": "plopeni, judetul prahova",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "234",
+		"name": "Sinaia",
+		"description": "Sinaia, judeţul Prahova",
+		"search": "sinaia, judetul prahova",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "235",
+		"name": "Slănic",
+		"description": "Slănic, judeţul Prahova",
+		"search": "slanic, judetul prahova",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "236",
+		"name": "Urlați",
+		"description": "Urlați, judeţul Prahova",
+		"search": "urlati, judetul prahova",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "237",
+		"name": "Vălenii de Munte",
+		"description": "Vălenii de Munte, judeţul Prahova",
+		"search": "valenii de munte, judetul prahova",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "238",
+		"name": "Carei",
+		"description": "Carei, judeţul Satu Mare",
+		"search": "carei, judetul satu mare",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "239",
+		"name": "Satu Mare",
+		"description": "Satu Mare, judeţul Satu Mare",
+		"search": "satu mare, judetul satu mare",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "240",
+		"name": "Ardud",
+		"description": "Ardud, judeţul Satu Mare",
+		"search": "ardud, judetul satu mare",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "241",
+		"name": "Livada",
+		"description": "Livada, judeţul Satu Mare",
+		"search": "livada, judetul satu mare",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "242",
+		"name": "Negrești-Oaș",
+		"description": "Negrești-Oaș, judeţul Satu Mare",
+		"search": "negresti-oas, judetul satu mare",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "243",
+		"name": "Tășnad",
+		"description": "Tășnad, judeţul Satu Mare",
+		"search": "tasnad, judetul satu mare",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "244",
+		"name": "Zalău",
+		"description": "Zalău, judeţul Sălaj",
+		"search": "zalau, judetul salaj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "245",
+		"name": "Cehu Silvaniei",
+		"description": "Cehu Silvaniei, judeţul Sălaj",
+		"search": "cehu silvaniei, judetul salaj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "246",
+		"name": "Jibou",
+		"description": "Jibou, judeţul Sălaj",
+		"search": "jibou, judetul salaj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "247",
+		"name": "Șimleu Silvaniei",
+		"description": "Șimleu Silvaniei, judeţul Sălaj",
+		"search": "simleu silvaniei, judetul salaj",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "248",
+		"name": "Mediaș",
+		"description": "Mediaș, judeţul Sibiu",
+		"search": "medias, judetul sibiu",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "249",
+		"name": "Sibiu",
+		"description": "Sibiu, judeţul Sibiu",
+		"search": "sibiu, judetul sibiu",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "250",
+		"name": "Agnita",
+		"description": "Agnita, judeţul Sibiu",
+		"search": "agnita, judetul sibiu",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "251",
+		"name": "Avrig",
+		"description": "Avrig, judeţul Sibiu",
+		"search": "avrig, judetul sibiu",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "252",
+		"name": "Cisnădie",
+		"description": "Cisnădie, judeţul Sibiu",
+		"search": "cisnadie, judetul sibiu",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "253",
+		"name": "Copșa Mică",
+		"description": "Copșa Mică, judeţul Sibiu",
+		"search": "copsa mica, judetul sibiu",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "254",
+		"name": "Dumbrăveni",
+		"description": "Dumbrăveni, judeţul Sibiu",
+		"search": "dumbraveni, judetul sibiu",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "255",
+		"name": "Miercurea Sibiului",
+		"description": "Miercurea Sibiului, judeţul Sibiu",
+		"search": "miercurea sibiului, judetul sibiu",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "256",
+		"name": "Ocna Sibiului",
+		"description": "Ocna Sibiului, judeţul Sibiu",
+		"search": "ocna sibiului, judetul sibiu",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "257",
+		"name": "Săliște",
+		"description": "Săliște, judeţul Sibiu",
+		"search": "saliste, judetul sibiu",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "258",
+		"name": "Tălmaciu",
+		"description": "Tălmaciu, judeţul Sibiu",
+		"search": "talmaciu, judetul sibiu",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "259",
+		"name": "Câmpulung Moldovenesc",
+		"description": "Câmpulung Moldovenesc, judeţul Suceava",
+		"search": "campulung moldovenesc, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "260",
+		"name": "Fălticeni",
+		"description": "Fălticeni, judeţul Suceava",
+		"search": "falticeni, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "261",
+		"name": "Rădăuți",
+		"description": "Rădăuți, judeţul Suceava",
+		"search": "radauti, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "262",
+		"name": "Vatra Dornei",
+		"description": "Vatra Dornei, judeţul Suceava",
+		"search": "vatra dornei, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "263",
+		"name": "Suceava",
+		"description": "Suceava, judeţul Suceava",
+		"search": "suceava, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "264",
+		"name": "Broșteni",
+		"description": "Broșteni, judeţul Suceava",
+		"search": "brosteni, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "265",
+		"name": "Cajvana",
+		"description": "Cajvana, judeţul Suceava",
+		"search": "cajvana, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "266",
+		"name": "Dolhasca",
+		"description": "Dolhasca, judeţul Suceava",
+		"search": "dolhasca, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "267",
+		"name": "Frasin",
+		"description": "Frasin, judeţul Suceava",
+		"search": "frasin, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "268",
+		"name": "Gura Humorului",
+		"description": "Gura Humorului, judeţul Suceava",
+		"search": "gura humorului, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "269",
+		"name": "Liteni",
+		"description": "Liteni, judeţul Suceava",
+		"search": "liteni, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "270",
+		"name": "Milișăuți",
+		"description": "Milișăuți, judeţul Suceava",
+		"search": "milisauti, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "271",
+		"name": "Salcea",
+		"description": "Salcea, judeţul Suceava",
+		"search": "salcea, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "272",
+		"name": "Solca",
+		"description": "Solca, judeţul Suceava",
+		"search": "solca, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "273",
+		"name": "Vicovu de Sus",
+		"description": "Vicovu de Sus, judeţul Suceava",
+		"search": "vicovu de sus, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "274",
+		"name": "Siret",
+		"description": "Siret, judeţul Suceava",
+		"search": "siret, judetul suceava",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "275",
+		"name": "Roșiorii de Vede",
+		"description": "Roșiorii de Vede, judeţul Teleorman",
+		"search": "rosiorii de vede, judetul teleorman",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "276",
+		"name": "Turnu Măgurele",
+		"description": "Turnu Măgurele, judeţul Teleorman",
+		"search": "turnu magurele, judetul teleorman",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "277",
+		"name": "Alexandria",
+		"description": "Alexandria, judeţul Teleorman",
+		"search": "alexandria, judetul teleorman",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "278",
+		"name": "Videle",
+		"description": "Videle, judeţul Teleorman",
+		"search": "videle, judetul teleorman",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "279",
+		"name": "Zimnicea",
+		"description": "Zimnicea, judeţul Teleorman",
+		"search": "zimnicea, judetul teleorman",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "280",
+		"name": "Lugoj",
+		"description": "Lugoj, judeţul Timiș",
+		"search": "lugoj, judetul timis",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "281",
+		"name": "Timișoara",
+		"description": "Timișoara, judeţul Timiș",
+		"search": "timisoara, judetul timis",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "282",
+		"name": "Buziaș",
+		"description": "Buziaș, judeţul Timiș",
+		"search": "buzias, judetul timis",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "283",
+		"name": "Ciacova",
+		"description": "Ciacova, judeţul Timiș",
+		"search": "ciacova, judetul timis",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "284",
+		"name": "Deta",
+		"description": "Deta, judeţul Timiș",
+		"search": "deta, judetul timis",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "285",
+		"name": "Făget",
+		"description": "Făget, judeţul Timiș",
+		"search": "faget, judetul timis",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "286",
+		"name": "Gătaia",
+		"description": "Gătaia, judeţul Timiș",
+		"search": "gataia, judetul timis",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "287",
+		"name": "Recaș",
+		"description": "Recaș, judeţul Timiș",
+		"search": "recas, judetul timis",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "288",
+		"name": "Sânnicolau Mare",
+		"description": "Sânnicolau Mare, judeţul Timiș",
+		"search": "sannicolau mare, judetul timis",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "289",
+		"name": "Jimbolia",
+		"description": "Jimbolia, judeţul Timiș",
+		"search": "jimbolia, judetul timis",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "290",
+		"name": "Tulcea",
+		"description": "Tulcea, judeţul Tulcea",
+		"search": "tulcea, judetul tulcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "291",
+		"name": "Babadag",
+		"description": "Babadag, judeţul Tulcea",
+		"search": "babadag, judetul tulcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "292",
+		"name": "Isaccea",
+		"description": "Isaccea, judeţul Tulcea",
+		"search": "isaccea, judetul tulcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "293",
+		"name": "Măcin",
+		"description": "Măcin, judeţul Tulcea",
+		"search": "macin, judetul tulcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "294",
+		"name": "Sulina",
+		"description": "Sulina, judeţul Tulcea",
+		"search": "sulina, judetul tulcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "295",
+		"name": "Bârlad",
+		"description": "Bârlad, judeţul Vaslui",
+		"search": "barlad, judetul vaslui",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "296",
+		"name": "Huși",
+		"description": "Huși, judeţul Vaslui",
+		"search": "husi, judetul vaslui",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "297",
+		"name": "Vaslui",
+		"description": "Vaslui, judeţul Vaslui",
+		"search": "vaslui, judetul vaslui",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "298",
+		"name": "Murgeni",
+		"description": "Murgeni, judeţul Vaslui",
+		"search": "murgeni, judetul vaslui",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "299",
+		"name": "Negrești",
+		"description": "Negrești, judeţul Vaslui",
+		"search": "negresti, judetul vaslui",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "300",
+		"name": "Drăgășani",
+		"description": "Drăgășani, judeţul Vâlcea",
+		"search": "dragasani, judetul valcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "301",
+		"name": "Râmnicu Vâlcea",
+		"description": "Râmnicu Vâlcea, judeţul Vâlcea",
+		"search": "ramnicu valcea, judetul valcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "302",
+		"name": "Berbești",
+		"description": "Berbești, judeţul Vâlcea",
+		"search": "berbesti, judetul valcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "303",
+		"name": "Brezoi",
+		"description": "Brezoi, judeţul Vâlcea",
+		"search": "brezoi, judetul valcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "304",
+		"name": "Băbeni",
+		"description": "Băbeni, judeţul Vâlcea",
+		"search": "babeni, judetul valcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "305",
+		"name": "Băile Govora",
+		"description": "Băile Govora, judeţul Vâlcea",
+		"search": "baile govora, judetul valcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "306",
+		"name": "Băile Olănești",
+		"description": "Băile Olănești, judeţul Vâlcea",
+		"search": "baile olanesti, judetul valcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "307",
+		"name": "Bălcești",
+		"description": "Bălcești, judeţul Vâlcea",
+		"search": "balcesti, judetul valcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "308",
+		"name": "Călimănești",
+		"description": "Călimănești, judeţul Vâlcea",
+		"search": "calimanesti, judetul valcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "309",
+		"name": "Horezu",
+		"description": "Horezu, judeţul Vâlcea",
+		"search": "horezu, judetul valcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "310",
+		"name": "Ocnele Mari",
+		"description": "Ocnele Mari, judeţul Vâlcea",
+		"search": "ocnele mari, judetul valcea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "311",
+		"name": "Adjud",
+		"description": "Adjud, judeţul Vrancea",
+		"search": "adjud, judetul vrancea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "312",
+		"name": "Focșani",
+		"description": "Focșani, judeţul Vrancea",
+		"search": "focsani, judetul vrancea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "313",
+		"name": "Mărășești",
+		"description": "Mărășești, judeţul Vrancea",
+		"search": "marasesti, judetul vrancea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "314",
+		"name": "Odobești",
+		"description": "Odobești, judeţul Vrancea",
+		"search": "odobesti, judetul vrancea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "315",
+		"name": "Panciu",
+		"description": "Panciu, judeţul Vrancea",
+		"search": "panciu, judetul vrancea",
+		"address": null,
+		"categoryId": 0
+	},
+	{
+		"locId": "316",
+		"name": "București",
+		"description": "București, Toate Sectoarele",
+		"search": "bucuresti, toate sectoarele, sectorul 1, 2, 3, 4, 5, 6",
+		"address": "Toate Sectoarele",
+		"categoryId": 0
+	}
+]

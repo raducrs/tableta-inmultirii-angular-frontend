@@ -1,0 +1,30 @@
+input {
+  display: none
+}
+
+.fullwidth {
+  margin: auto;
+}
+
+.buttons{
+  max-width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.imgclass {
+  display: block;
+  max-width: 95%;
+  margin: auto;
+  margin-bottom: 30px;
+  margin-top: 10px;
+  border-color: burlywood;
+  border-width: 5px;
+  border-style: double;
+}
+// https://www.cssportal.com/blog/10-image-shadows-using-css/
+.s3 {
+  -webkit-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+  -moz-box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+  box-shadow: 0 28px 16px -26px rgba(0, 0, 0);
+}

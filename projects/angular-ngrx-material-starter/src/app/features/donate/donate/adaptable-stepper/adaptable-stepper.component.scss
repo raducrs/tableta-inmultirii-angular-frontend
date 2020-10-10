@@ -1,0 +1,25 @@
+.completed-step {
+  font-weight: 600;
+}
+.prev-next-btns-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding-right: 20px;
+}
+
+:host ::ng-deep .mat-step-header:hover {
+  background-color: #ffffffff !important;
+}
+:host ::ng-deep .cdk-program-focused {
+  background-color: #ffffffff !important;
+}
+:host ::ng-deep .mat-step-label-selected {
+  font-weight: 600 !important;
+  color: rgba(0, 0, 0, 0.54) !important;
+  text-decoration: underline;
+}
+
+:host ::ng-deep .mat-step-icon-state-edit {
+  background-color: rgba(0, 0, 0, 0.54) !important;
+}

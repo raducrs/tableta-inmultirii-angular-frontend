@@ -1,0 +1,27 @@
+<div class="container" style="background: white; padding: 1em">
+  <div class="row">
+    <div class="col-sm-12"><h1>Managementul cazurilor</h1></div>
+  </div>
+
+  <mat-tab-group>
+    <mat-tab>
+      <ng-template mat-tab-label>
+<!--        <mat-icon class="example-tab-icon">thumb_up</mat-icon>-->
+        Catre mine
+      </ng-template>
+        <anms-targeted></anms-targeted>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        Catre zonele mele
+      </ng-template>
+      <anms-location></anms-location>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        Acceptate
+      </ng-template>
+      <anms-accepted></anms-accepted>
+    </mat-tab>
+  </mat-tab-group>
+</div>

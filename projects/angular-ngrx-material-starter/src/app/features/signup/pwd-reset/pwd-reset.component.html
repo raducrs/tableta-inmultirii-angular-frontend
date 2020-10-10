@@ -1,0 +1,76 @@
+<div class="container" style="padding-top:5em; padding-bottom: 5em; background: white; display: flex; align-content: center; justify-content:center">
+  <div [hidden]="passwordInput" style="box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);     border-top-right-radius: 4px;
+    border-top-left-radius: 4px; padding: 1em">
+
+    <h2>Parola uitata</h2>
+  <form [formGroup]="rUser" (ngSubmit)="requestCode()">
+    <p style="max-width: 200px;"> Vei primi pe email codul pentru reinitializare </p>
+    <div class="flex-container">
+      <mat-form-field class="full-width-input-field">
+        <mat-label>Adresa email</mat-label>
+        <input matInput type="email" maxlength="50" placeholder="superdonatorul@exemplu.com" formControlName="rEmail">
+        <mat-error *ngIf="hasError(rUser,'rEmail', 'required')">Email-ul este necesar</mat-error>
+        <mat-error *ngIf="hasError(rUser,'rEmail', 'maxlength')">Mai mult de 50 de caractere</mat-error>
+        <mat-error *ngIf="hasError(rUser,'rEmail', 'email')">Email invalid</mat-error>
+      </mat-form-field>
+    </div>
+
+    <div class="prev-next-btns-container" style="display: flex; justify-content: center;">
+      <button mat-button mat-flat-button color="primary" type="submit">Trimite cod</button>
+    </div>
+  </form>
+  </div>
+
+  <div [hidden]="!passwordInput || (passwordReset | async)" style="box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);     border-top-right-radius: 4px;
+    border-top-left-radius: 4px; padding: 1em">
+
+    <h2>Reinitializare parola</h2>
+    <form [formGroup]="pUser" (ngSubmit)="resetPassword()">
+      <p style="color: red; max-width: 200px;" *ngIf="errorReset | async"> {{ message }}</p>
+      <p>Ai primit un email cu codul de reinitializare de 6 cifre. Verifica-ti emailul!</p>
+      <div class="flex-container">
+        <mat-form-field class="full-width-input-field">
+          <mat-label>Cod resetare</mat-label>
+          <input matInput type="text" maxlength="50" placeholder="Verifica-ti email-ul" formControlName="nCode">
+          <mat-error *ngIf="hasError(pUser, 'nCode', 'required')">Codul este necesar</mat-error>
+        </mat-form-field>
+      </div>
+      <div class="flex-container">
+        <mat-form-field class="full-width-input-field">
+          <mat-label>Parola</mat-label>
+          <input matInput [type]="hide ? 'password' : 'text'" #nPassword maxlength="50" placeholder="" formControlName="nPassword">
+          <mat-error *ngIf="hasError(pUser, 'nPassword', 'required')">Parola este necesar</mat-error>
+          <mat-error *ngIf="hasError(pUser, 'nPassword', 'minlength')">Parola prea scurta. Minim 6 caractere.</mat-error>
+          <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Ascunde parola'" [attr.aria-pressed]="hide">
+            <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+
+      <div class="flex-container">
+        <mat-form-field class="full-width-input-field">
+          <mat-label>Confirmare parola</mat-label>
+          <input matInput [type]="hide2 ? 'password' : 'text'" #nPassword2 maxlength="50" placeholder="" formControlName="nPassword2" [errorStateMatcher]="errorMatcher">
+          <mat-error *ngIf="hasError(pUser, 'nPassword2', 'required')">Parola este necesar</mat-error>
+          <mat-error *ngIf="passmismatchError(nPassword2.value)">Cele doua parole nu se potrivesc</mat-error>
+          <button mat-icon-button matSuffix (click)="hide2 = !hide2" [attr.aria-label]="'Ascunde parola'" [attr.aria-pressed]="hide2">
+            <mat-icon>{{hide2 ? 'visibility_off' : 'visibility'}}</mat-icon>
+          </button>
+        </mat-form-field>
+      </div>
+
+      <div class="prev-next-btns-container" style="display: flex; justify-content: center;">
+        <button mat-button mat-flat-button color="primary">Resetare parola</button>
+      </div>
+    </form>
+
+
+
+  </div>
+  <div [hidden]="!(passwordReset | async)" style="box-shadow: 0px 3px 1px -2px rgba(0, 0, 0, 0.2), 0px 2px 2px 0px rgba(0, 0, 0, 0.14), 0px 1px 5px 0px rgba(0, 0, 0, 0.12);     border-top-right-radius: 4px;
+    border-top-left-radius: 4px; padding: 1em">
+    <p> Parola reinitializata cu success</p>
+  </div>
+</div>
+
+
