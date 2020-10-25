@@ -4,7 +4,7 @@ import {
   ChangeDetectionStrategy,
   Output,
   EventEmitter,
-  ViewChild
+  ViewChild, Input
 } from '@angular/core';
 import { MatAccordion, MatExpansionPanel } from '@angular/material/expansion';
 import {Form, FormControl, FormGroup, FormGroupDirective, NgForm, Validators} from '@angular/forms';
@@ -34,6 +34,7 @@ class TouchedFieldErrorMatcher implements ErrorStateMatcher {
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class GadgetTabComponent implements OnInit {
+  @Input('initialSelection') initialSelection;
   @Output() selectionMade: EventEmitter<boolean> = new EventEmitter<boolean>();
 
   selection;
@@ -82,6 +83,18 @@ export class GadgetTabComponent implements OnInit {
     this.activeForm = this.formLaptop;
 
     this.initForm();
+
+    if (this.initialSelection) {
+      this.selectedOption(this.initialSelection);
+      this.laptopPanel.close();
+      this.tabletPanel.close();
+      this.phonePanel.close();
+      switch (this.initialSelection){
+        case 'laptop': this.laptopPanel.open(); break;
+        case 'tablet': this.tabletPanel.open(); break;
+        case 'phone': this.phonePanel.open(); break;
+      }
+    }
   }
 
   private initForm(){

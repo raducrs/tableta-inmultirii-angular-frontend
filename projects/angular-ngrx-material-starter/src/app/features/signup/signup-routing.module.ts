@@ -10,21 +10,24 @@ const routes: Routes = [
   {
     path: 'partner/sign-up',
     component: PartenerComponent,
-    data: { title: 'Vreau sa ma implic!' }
+    data: {
+      title: 'Vreau sa mă implic ca partener - Tableta Inmulțirii',
+           description: 'Inscrie-te ca si partener pentru a ajuta la distribuirea donatiilor si a ajunge la copiii care au nevoie.Doneaza laptopul, tableta sau telefonul de care nu mai ai nevoie catre copiii scolari care au nevoie.'
+    }
   },
   {
     path: 'partner/confirm',
     component: PConfirmComponent,
-    data: { title: 'Vreau sa ma implic!' }
+    data: { title: 'Multumim! - Tableta Inmulțirii' }
   },
   {
     path: 'sign-in',
     component: SignInComponent,
-    data: { title: 'Intra in cont' }
+    data: { title: 'Intră in cont - Tableta Inmulțirii' }
   }, {
     path: 'pwd-reset',
     component: PwdResetComponent,
-    data: { title: 'Reinitializare parola' }
+    data: { title: 'Reinitializare parola - Tableta Inmulțirii' }
   },
 ];
 

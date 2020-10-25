@@ -1,7 +1,10 @@
 <mat-horizontal-stepper #stepper linear="true" *ngIf="!smallScreen">
   <mat-step [state]="completedWhat ? 'done' : 'what' " [completed]="completedWhat">
     <ng-template matStepLabel="done"><span [class.completed-step]="completedWhat">Ce donez</span></ng-template>
-    <anms-gadget-tab (selectionMade)="gadgetSelectionMade($event)"></anms-gadget-tab>
+    <h2 class="d-none d-md-block" style="margin-top: 15px;">{{ heading }}</h2>
+    <h3 class="d-md-none" style="margin-top: 15px;">{{ heading }}</h3>
+    <p> {{ message }}</p>
+    <anms-gadget-tab (selectionMade)="gadgetSelectionMade($event)" [initialSelection]="initSel"></anms-gadget-tab>
       <div class="prev-next-btns-container">
         <button mat-button mat-flat-button [color]="completedWhat ? 'primary' : ''" matStepperNext>Urmatorul</button>
       </div>
@@ -51,8 +54,11 @@
 <mat-vertical-stepper #stepper linear="true" *ngIf="smallScreen">
   <mat-step [state]="completedWhat ? 'done' : 'what' " [completed]="completedWhat">
     <ng-template matStepLabel="done"><span [class.completed-step]="completedWhat">Ce donez</span></ng-template>
-    <anms-gadget-tab (selectionMade)="gadgetSelectionMade($event)"></anms-gadget-tab>
-    <div class="prev-next-btns-container">
+    <h2 class="d-none d-md-block" style="margin-top: 15px;">{{ heading }}</h2>
+    <h3 class="d-md-none" style="margin-top: 15px;">{{ heading }}</h3>
+    <p> {{ message }}</p>
+    <anms-gadget-tab (selectionMade)="gadgetSelectionMade($event)" [initialSelection]="initSel"></anms-gadget-tab>
+     <div class="prev-next-btns-container">
       <button mat-button mat-flat-button [color]="completedWhat ? 'primary' : ''" matStepperNext>Urmatorul</button>
     </div>
   </mat-step>

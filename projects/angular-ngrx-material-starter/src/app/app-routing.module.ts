@@ -56,6 +56,11 @@ const routes: Routes = [
     loadChildren: () =>
       import('./features/blackboard/blackboard.module').then((m) => m.BlackboardModule)
   },
+  {
+    path: 'schools',
+    loadChildren: () =>
+      import('./features/schools/schools.module').then((m) => m.SchoolsModule)
+  },
   // {
   //   path: 'settings',
   //   loadChildren: () =>

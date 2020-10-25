@@ -35,6 +35,8 @@ export class AppErrorHandler extends ErrorHandler {
       this.notificationsService.errorLong('Acces respins. Operatiunea nu este permisa. Autentifica-te sau cere drepturi');
     }else if (error && error instanceof  HttpErrorResponse && error.url && error.url.indexOf('https://tableta-inmultirii-public.s3.eu-central-1.amazonaws.com') >= 0){
       // NOOP
+    } else if (error && error instanceof  HttpErrorResponse && error.url && error.url.indexOf('/schools') >= 0){
+      // NOOP
     } else  {
       this.notificationsService.error(displayMessage);
     }

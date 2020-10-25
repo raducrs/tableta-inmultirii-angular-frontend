@@ -34,6 +34,10 @@ export class AdaptableStepperComponent implements OnInit {
   sending = false;
   donation;
 
+  heading = 'Donează laptop, tabletă sau telefon'
+  message = 'Dacă ți-ai schimbat recent telefonul sau ai o tabletă ținută într-un sertar, poate un laptop uitat în debara, poți să le donezi și să ajuți să contribui la educație digitală cu șanse egale pentru toți.'
+  initSel
+
   constructor(private store: Store<DonationState>, private notificationService: NotificationService, private router: Router, private route: ActivatedRoute) {
     this.smallScreen = window.innerWidth < 920;
   }
@@ -64,6 +68,25 @@ export class AdaptableStepperComponent implements OnInit {
           this.notificationService.error('A fost o eroare in procesare. Te rugam sa incerci mai tarziu');
         }
       })
+
+    const path = this.router.url;
+    if (path){
+      if (path.indexOf('/laptop') >= 0){
+        this.heading = 'Donează laptop';
+        this.message = 'Dacă  ai un laptop pe care nu îl mai folosești sau l-ai schimbat, poți să îl donezi pentru unul dintre elevii care nu au posibilitatea să cumpere unul.'
+        this.initSel = 'laptop'
+      }
+      if (path.indexOf('/tablet') >= 0){
+        this.heading = 'Donează tabletă';
+        this.message = 'Dacă ai o tabletă ținută într-un sertar pe care nu o mai folosești poți să o donezi și să contribui la educație digitală cu șanse egale pentru toți elevii. Donezi pentru unul dintre elevii care nu au posibilitatea să o cumpere.'
+        this.initSel = 'tablet'
+      }
+      if (path.indexOf('/phone') >= 0){
+        this.heading = 'Donează telefon';
+        this.message = 'Dacă ți-ai schimbat recent telefonul poți să îl donezi și să contribui la educație digitală cu șanse egale pentru toți elevii din România.'
+        this.initSel = 'phone'
+      }
+    }
   }
 
   gadgetSelectionMade(selectionMade: boolean) {

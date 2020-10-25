@@ -8,7 +8,9 @@ const routes: Routes = [
   {
     path: 'customize',
     component: UploadComponent,
-    data: { title: 'Crează și răspândește mesajul!' }
+    data: { title: 'Propria Tablă - Tableta Înmulțirii',
+    description: 'Donează pe Tableta Înmulțirii pentru Educație digitală cu șanse egale! Contribuie și tu la răspândirea mesaju cu propria tablă desenată. Doneaza laptopul, tableta sau telefonul de care nu mai ai nevoie catre copiii scolari care au nevoie'
+    }
   },
   {
     path: 'me/:image',

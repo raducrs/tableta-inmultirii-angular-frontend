@@ -1,4 +1,4 @@
-const description = "Centrul pentru reabilitare socială și primire în regim de urgență a victimelor traficului de persoane intervenți în situați de trafic migrație și repratieri județul Cluj Aurel Vlaicu Cluj-Napoca "
+const description = "Complexul de Servicii pentru Copilul cu Deficiențe Neuropsihiatrice din Sighișoara, județul Mureș Sighișoara Aleea Margaretelor"
 const search = description.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "")
 console.log(search)
 

@@ -8,12 +8,12 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    data: { title: 'Tableta Inmultirii' }
+    data: { title: 'Acasă - Tableta Înmulțirii' }
   },
   {
     path: 'contact',
     component: ContactComponent,
-    data: { title: 'Tableta Inmultirii - Contact' }
+    data: { title: 'Contact - Tableta Înmulțirii' }
   },
 ];
 

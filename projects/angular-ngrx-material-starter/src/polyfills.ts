@@ -65,3 +65,9 @@ import 'zone.js/dist/zone';
 
 window["ga-disable-UA-7358061-1"] = true;
 window["gid-disable-UA-7358061-1"] = true;
+
+/***************************************************************************************************
+* SCULLY IMPORTS
+*/
+// tslint:disable-next-line: align
+import 'zone.js/dist/task-tracking';

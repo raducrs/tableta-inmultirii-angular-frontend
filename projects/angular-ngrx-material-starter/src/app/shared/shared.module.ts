@@ -58,7 +58,7 @@ import {
   faMobile,
   faHandHoldingHeart, faGraduationCap, faCity, faSearch, faUpload, faCamera,
   faDownload,
-  faShareAlt, faClone
+  faShareAlt, faClone, faFile, faChartLine
 } from '@fortawesome/free-solid-svg-icons';
 import {faMediumM, faGithub, faFacebook} from '@fortawesome/free-brands-svg-icons';
 
@@ -69,6 +69,7 @@ import { SimpleCardComponent } from './simple-card/simple-card.component';
 import {MatTableModule} from '@angular/material/table';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import {MatSortModule} from '@angular/material/sort';
+import {NgPipesModule} from 'ngx-pipes';
 
 @NgModule({
   imports: [
@@ -100,6 +101,8 @@ import {MatSortModule} from '@angular/material/sort';
     MatSortModule,
     MatProgressSpinnerModule,
 
+    NgPipesModule,
+
     FontAwesomeModule
   ],
   declarations: [
@@ -108,7 +111,7 @@ import {MatSortModule} from '@angular/material/sort';
     RtlSupportDirective,
     SimpleCardComponent
   ],
-  providers:[
+  providers: [
     {
       provide: STEPPER_GLOBAL_OPTIONS,
       useValue: { displayDefaultIndicatorType: false }
@@ -146,6 +149,8 @@ import {MatSortModule} from '@angular/material/sort';
         MatPaginatorModule,
         MatSortModule,
         MatProgressSpinnerModule,
+
+        NgPipesModule,
 
         FontAwesomeModule,
 
@@ -195,7 +200,9 @@ export class SharedModule {
       faCamera,
       faDownload,
       faShareAlt,
-      faClone
+      faClone,
+      faChartLine,
+      faFile,
     );
   }
 }

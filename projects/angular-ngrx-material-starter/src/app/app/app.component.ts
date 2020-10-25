@@ -22,6 +22,10 @@ import {
 import { Auth } from 'aws-amplify'
 import {authGoToAccount} from '../core/auth/auth.actions';
 import {HttpClient} from '@angular/common/http';
+import {ScenarioData} from '../features/schools/scenario-data';
+import {filter, tap} from 'rxjs/operators';
+import {ActivationEnd, Router} from '@angular/router';
+import {MetaServiceService} from '../core/metatags/meta-service.service';
 
 @Component({
   selector: 'anms-root',
@@ -37,8 +41,10 @@ export class AppComponent implements OnInit {
   logo = require('../../assets/logo.png').default;
   languages = ['en', 'de', 'sk', 'fr', 'es', 'pt-br', 'zh-cn', 'he'];
   navigation = [
-    { link: 'donate', label: 'Doneaza' },
+    { link: 'home', label: 'Acasă' },
+    { link: 'donate', label: 'Donează' },
     { link: 'user-forms/partner/sign-up', label: 'Partener' },
+    { link: 'schools', label: 'Școli' },
     { link: 'home/contact', label: 'Contact' }
   ];
   navigationSideMenu = [
@@ -59,7 +65,9 @@ export class AppComponent implements OnInit {
     private store: Store,
     private storageService: LocalStorageService,
     private httpClient: HttpClient,
-    private notificationService: NotificationService
+    private notificationService: NotificationService,
+    private router: Router,
+    private metaService: MetaServiceService
   ) {}
 
   private static isIEorEdgeOrSafari() {
@@ -124,6 +132,18 @@ export class AppComponent implements OnInit {
       this.dimissible = text.dismissible;
     })
 
+    this.router.events.pipe(
+      filter((event) => event instanceof ActivationEnd)
+    ).pipe(
+      tap(() => {
+        this.metaService.setMeta(this.router.routerState.snapshot.root);
+      })
+    ).subscribe( evt => {
+        // NOOP
+        if ('xzy' === evt.toString()) {
+          console.log('xzy')
+        }
+      });
 
   }
 

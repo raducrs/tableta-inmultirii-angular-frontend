@@ -4,28 +4,19 @@
       <h1>Tableta inmultirii</h1>
       <h3 style="text-align:center">Pana in acest moment avem donate</h3>
       <div class="actions">
-        <a mat-raised-button class="actions-main" color="primary" [ngClass]="routeAnimationsElements">
+        <a mat-flat-button class="actions-main" color="primary" [ngClass]="routeAnimationsElements">
           Laptopuri: {{laptops}}<span style="font-size: 1.75em;padding: 0; padding-bottom: 7px;">&#9786;</span>
         </a>
-        <a mat-raised-button class="actions-main" color="accent" [ngClass]="routeAnimationsElements">
+        <a mat-flat-button class="actions-main" color="accent" [ngClass]="routeAnimationsElements">
           Tablete: {{tablets}}<span style="font-size: 1.75em;padding: 0; padding-bottom: 7px;">&#9786;</span>
         </a>
-        <a mat-raised-button class="actions-main" color="warn" [ngClass]="routeAnimationsElements">
+        <a mat-flat-button class="actions-main" color="warn" [ngClass]="routeAnimationsElements">
           Telefoane: {{phones}}<span style="font-size: 1.75em;padding: 0; padding-bottom: 7px;">&#9786;</span>
         </a>
       </div>
     </div>
     <div class="container">
       <div class="follow-releases" [ngClass]="routeAnimationsElements">
-        <h2>Cum pot sa ajut</h2>
-        <p rtl>
-          Din ce in ce mai multe scoli opteaza pentru clase online, fortate de pandemia COVID-19. Multi dintre elevi nu au access
-          la un dispozitiv care sa le permita invatarea online.
-        </p>
-        <p style="font-weight:bolder">
-          Daca ai acasa <code>un laptop</code>, <code>o tableta</code> sau <code>un telefon</code> pe care nu le mai folosesti,
-          le poti dona pentru unul dintre copiii care merg la scoala si nu au posibilitatea sa achizitioneze unul.
-        </p>
         <div class="container">
           <div class="actions">
             <a mat-raised-button class="actions-main" color="warn"
@@ -35,13 +26,62 @@
             </a>
           </div>
         </div>
+        <h2>Cum pot sa ajut</h2>
+        <p rtl>
+          Din ce in ce mai multe scoli opteaza pentru clase online, fortate de pandemia COVID-19. Multi dintre elevi nu au access
+          la un dispozitiv care sa le permita invatarea online.
+        </p>
+        <p style="font-weight:bolder">
+          Daca ai acasa <code>un laptop</code>, <code>o tableta</code> sau <code>un telefon</code> pe care nu le mai folosesti,
+          le poti dona pentru unul dintre copiii care merg la scoala si nu au posibilitatea sa achizitioneze unul.
+        </p>
+        <div class="fullwidth">
+          <div class="fullwidth buttons">
+            <a mat-raised-button routerLink="/donate" color="primary" ><fa-icon icon="hand-holding-heart" style="margin-right: 0.25em"></fa-icon>Donează</a>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-
-  <div class="container" style="background: white; padding: 1em">
+  <div class="container" style="background: #fafafa; padding: 1em">
+    <h1 style="font-size:1.5em;">Situția școlilor <span style=" white-space: nowrap;">{{ date | date: 'EEEE d MMMM':undefined:'ro'}}</span></h1>
+    <p style="text-align:center"> Situația unităților de învătământ preuniversitar conform raportărilor Ministerului Educației și Cercetării.</p>
+    <p style="text-align:center" class="p-nice"> Dacă data afișată este cea de ieri înseamnă că nu există modificări ale distribuției scenarilor până la acest moment.
+      Reveniți mai târziu pentru a verifica dacă a existat o nouă raportare în cursul zilei.</p>
+    <p style="text-align:center"> Puteți verifica numărul în timp real și <a routerLink="/schools">aici</a></p>
+    <div class="actions" style="text-align:center;">
+      <a mat-flat-button class="stat-main green-color" [ngClass]="routeAnimationsElements">
+        S1: {{green}}
+      </a>
+      <a mat-flat-button class="stat-main yellow-color"  [ngClass]="routeAnimationsElements">
+        S2: {{yellow}}
+      </a>
+      <a mat-flat-button class="stat-main red-color" [ngClass]="routeAnimationsElements">
+        S3: {{red}}
+      </a>
+    </div>
+    <p style="text-align:center; font-size:0.75em; font-style: italic;margin-top:10px;">*<span style="color:#00701a; font-weight:bold;">Scenariu S1</span>: participarea zilnică (față în față)</p>
+    <p style="text-align:center; font-size:0.75em; font-style: italic;">*<span style="color:#ff9800; font-weight:bold;">Scenariu S2</span>: participarea zilnică (față în față) pentru clasele a VIII-a și a XII-a,
+      revenirea prin rotație la celelalte clase</p>
+    <p style="text-align:center; font-size:0.75em; font-style: italic;">*<span style="color:#8e0000; font-weight:bold;">Scenariu S3</span>: doar activități/lecții online</p>
+    <p style="text-align:center; margin-top:10px;" class="p-nice">Pentru a afla mai multe detalii despre numărul școlilor pe scenarii, a vizualiza istoricul sau pentru a consulta sursele urmează butonul de mai jos</p>
+    <div class="fullwidth">
+      <div class="fullwidth buttons">
+        <a mat-raised-button routerLink="/schools" color="primary" ><fa-icon icon="chart-line" style="margin-right: 0.25em"></fa-icon>Arată mai multe</a>
+      </div>
+    </div>
+    <p style="text-align:center; margin-top:10px;" class="p-nice">Dacă ți-ai schimbat recent telefonul sau ai o tabletă ținută într-un sertar, poate un laptop uitat în debara, poți să le donezi și să contribui la educație digitală cu șanse egale pentru toți.</p>
+    <div class="fullwidth" style="max-width: 700px;">
+      <div class="fullwidth buttons" style="max-width: 700px; flex-wrap: wrap">
+        <button class="stat-main" mat-raised-button routerLink="/donate/laptop" color="primary" style="min-width:160px; display:flex"><span style="min-width:120px;"><fa-icon icon="laptop" style="margin-right: 0.25em"></fa-icon>Donează laptop</span></button>
+        <button class="stat-main" mat-raised-button routerLink="/donate/tablet" color="accent" style="min-width:160px; display:flex"><span style="min-width:120px;"><fa-icon icon="tablet" style="margin-right: 0.25em"></fa-icon> Donează tabletă</span></button>
+        <button class="stat-main" mat-raised-button routerLink="/donate/phone" color="warn" style="min-width:160px; display:flex"><span style="min-width:120px;"><fa-icon icon="mobile" style="margin-right: 0.25em"></fa-icon>Donează telefon</span></button>
+      </div>
+    </div>
+  </div>
+  <div class="container" style="background: #fafafa; padding: 1em">
     <h1 style="font-size:1.5em">Crează propria tablă desenată</h1>
     <p style="text-align: center">
       Contribuie și tu la răspândirea mesajului cu <code>propria tablă desenată</code>.

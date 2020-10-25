@@ -8,13 +8,39 @@ const routes: Routes = [
   {
     path: 'thank-you',
     component: ThankYouComponent,
-    data: { title: 'Multumim' }
+    data: { title: 'Mulțumim - Tableta Înmulțirii' }
+  },
+  {
+    path: 'laptop',
+    component: DonateComponent,
+    pathMatch: 'full',
+    data: { title: 'Donează laptop - Tableta Înmulțirii',
+      description: 'Donează laptopul de care nu mai ai nevoie catre copiii școlari care au nevoie.'
+    }
+  },
+  {
+    path: 'tablet',
+    component: DonateComponent,
+    pathMatch: 'full',
+    data: { title: 'Donează tableta - Tableta Înmulțirii',
+      description: 'Donează tableta de care nu mai ai nevoie catre copiii școlari care au nevoie.'
+    }
+  },
+  {
+    path: 'phone',
+    component: DonateComponent,
+    pathMatch: 'full',
+    data: { title: 'Donează telefonul - Tableta Înmulțirii',
+      description: 'Donează telefonul de care nu mai ai nevoie catre copiii școlari care au nevoie.'
+    }
   },
   {
     path: '',
     component: DonateComponent,
     pathMatch: 'full',
-    data: { title: 'Vreau sa ma implic' }
+    data: { title: 'Donează laptopul, tableta sau telefonul - Tableta Înmulțirii',
+            description: 'Donează laptopul, tableta sau telefonul de care nu mai ai nevoie catre copiii școlari care au nevoie.'
+    }
   },
 ];
 

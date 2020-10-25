@@ -1,5 +1,22 @@
-[ {
+[
+  {
   "link": "https://bcr.ro",
   "photo": "https://cdn0.erstegroup.com/content/dam/ro/bcr/common/logo-svg/BCR_web_internal-material.svg",
   "name": "BCR"
-}]
+  },
+  {
+    "link": "https://akszalife.blogspot.com/",
+    "photo": "https://2.bp.blogspot.com/-dMKvOYxp1h4/VEQIyivvfmI/AAAAAAAAAzg/xIHlP3YvAOU/s1600/Ak15.jpg",
+    "name": "Asociația Casa - AKSZA"
+  },
+  {
+    "link": "https://dgaspc-cluj.ro/unitati-rezidentiale-si-de-zi_protectia_copilului.html",
+    "photo": "https://dgaspc-cluj.ro/images/centre/01-Centru_primire_.png",
+    "name": "Centru victime trafic de persoane, județul Cluj"
+  },
+  {
+    "link": "https://www.dgaspcmures.ro/index.html",
+    "photo": "https://www.dgaspcmures.ro/images/ro/header_ro.jpg",
+    "name": "Complexul de Servicii pentru Copilul cu Deficiențe Neuropsihiatrice din Sighișoara"
+  }
+]

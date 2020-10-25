@@ -195,7 +195,7 @@ export class UploadComponent implements OnInit {
   public copyText(){
     this.copyToClipboard({
       description: 'text',
-      what: 'Donează laptopul, tableta sau telefonul vechi pe Tableta Înmulțirii pentru Educație digitală cu șanse egale! Contribuie și tu la răspândirea mesajului cu propria tablă desenată. \n\nPoți accesa direct www.tableta-inmultirii.ro pentru a ajuta. \n\n#educatiedigitala #ajut #imipasa #tableta-inmultirii'
+      what: 'Donează laptopul, tableta sau telefonul vechi pe Tableta Înmulțirii pentru Educație digitală cu șanse egale! Contribuie și tu la răspândirea mesajului cu propria tablă desenată. \n\nPoți accesa direct www.tableta-inmultirii.ro pentru a ajuta. \n\n#educatiedigitala #ajut #imipasa #tabletainmultirii'
     })
   }
 

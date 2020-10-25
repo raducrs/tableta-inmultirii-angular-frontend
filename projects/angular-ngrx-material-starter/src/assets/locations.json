@@ -2550,5 +2550,13 @@
     "search": "centrul pentru reabilitare sociala si primire in regim de urgenta a victimelor traficului de persoane interventi in situati de trafic migratie si repratieri judetul cluj aurel vlaicu cluj-napoca",
     "address": "Str. Aurel Vlaicu, nr. 27, Cluj-Napoca",
     "categoryId": 1
+  },
+  {
+    "locId": "neurosigh",
+    "name": " Servicii Copilul cu Deficiențe Neuropsihiatrice, Sighișoara",
+    "description": "Complexul de Servicii pentru Copilul cu Deficiențe Neuropsihiatrice din Sighișoara, județul Mureș",
+    "search": "complexul de servicii pentru copilul cu deficiente neuropsihiatrice din sighisoara, judetul mures sighisoara aleea margaretelor",
+    "address": " Str. Aleea Margaretelor nr.16, Sighișoara",
+    "categoryId": 1
   }
 ]
