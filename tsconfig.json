@@ -1,21 +1,25 @@
+/*
+  This is a "Solution Style" tsconfig.json file, and is used by editors and TypeScript’s language server to improve development experience.
+  It is not intended to be used to perform a compilation.
+
+  To learn more about this file see: https://angular.io/config/solution-tsconfig.
+
+  TODO https://stackoverflow.com/questions/64344998/angular-10-tsconfig-base-json-file-is-not-generated-after-upgrading-to-angular
+  apparently this style has been deprecated - but it is required b nguniversal 10.0.1 to revert
+  https://docs.google.com/document/d/1eB6cGCG_2ircfS5GzpDC9dBgikeYYcMxghVH5sDESHw/edit
+  https://github.com/angular/angular-cli/issues/18616
+*/
 {
-  "compileOnSave": false,
-  "compilerOptions": {
-    "baseUrl": "./src",
-    "outDir": "./dist/out-tsc",
-    "sourceMap": true,
-    "declaration": false,
-    "moduleResolution": "node",
-    "emitDecoratorMetadata": true,
-    "experimentalDecorators": true,
-    "importHelpers": true,
-    "module": "esnext",
-    "target": "es2015",
-    "typeRoots": ["node_modules/@types"],
-    "lib": ["es2018", "dom"]
-  },
-  "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
-  }
+  "files": [],
+  "references": [
+    {
+      "path": "./projects/angular-ngrx-material-starter/tsconfig.app.json"
+    },
+    {
+      "path": "./projects/angular-ngrx-material-starter/tsconfig.spec.json"
+    },
+    {
+      "path": "./projects/angular-ngrx-material-starter/tsconfig.server.json"
+    }
+  ]
 }

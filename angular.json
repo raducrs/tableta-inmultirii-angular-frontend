@@ -18,7 +18,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/full",
+            "outputPath": "dist/angular-ngrx-material-starter/browser",
             "index": "projects/angular-ngrx-material-starter/src/index.html",
             "main": "projects/angular-ngrx-material-starter/src/main.ts",
             "polyfills": "projects/angular-ngrx-material-starter/src/polyfills.ts",
@@ -133,7 +133,8 @@
             "tsConfig": [
               "projects/angular-ngrx-material-starter/tsconfig.app.json",
               "projects/angular-ngrx-material-starter/tsconfig.spec.json",
-              "projects/angular-ngrx-material-starter/e2e/tsconfig.json"
+              "projects/angular-ngrx-material-starter/e2e/tsconfig.json",
+              "projects/angular-ngrx-material-starter/tsconfig.server.json"
             ],
             "exclude": ["**/node_modules/**"]
           }
@@ -148,6 +149,53 @@
             "production": {
               "devServerTarget": "angular-ngrx-material-starter:serve:production"
             }
+          }
+        },
+        "server": {
+          "builder": "@angular-devkit/build-angular:server",
+          "options": {
+            "outputPath": "dist/angular-ngrx-material-starter/server",
+            "main": "projects/angular-ngrx-material-starter/server.ts",
+            "tsConfig": "projects/angular-ngrx-material-starter/tsconfig.server.json"
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "media",
+              "fileReplacements": [
+                {
+                  "replace": "projects/angular-ngrx-material-starter/src/environments/environment.ts",
+                  "with": "projects/angular-ngrx-material-starter/src/environments/environment.prod.ts"
+                }
+              ],
+              "sourceMap": false,
+              "optimization": true
+            }
+          }
+        },
+        "serve-ssr": {
+          "builder": "@nguniversal/builders:ssr-dev-server",
+          "options": {
+            "browserTarget": "angular-ngrx-material-starter:build",
+            "serverTarget": "angular-ngrx-material-starter:server"
+          },
+          "configurations": {
+            "production": {
+              "browserTarget": "angular-ngrx-material-starter:build:production",
+              "serverTarget": "angular-ngrx-material-starter:server:production"
+            }
+          }
+        },
+        "prerender": {
+          "builder": "@nguniversal/builders:prerender",
+          "options": {
+            "browserTarget": "angular-ngrx-material-starter:build:production",
+            "serverTarget": "angular-ngrx-material-starter:server:production",
+            "routes": [
+              "/"
+            ]
+          },
+          "configurations": {
+            "production": {}
           }
         }
       }

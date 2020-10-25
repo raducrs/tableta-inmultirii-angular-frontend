@@ -17,7 +17,7 @@ registerLocaleData(localeRo);
   imports: [
     // angular
     BrowserAnimationsModule,
-    BrowserModule,
+    BrowserModule.withServerTransition({ appId: 'serverApp' }),
 
     // core
     CoreModule,
