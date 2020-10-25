@@ -60,6 +60,7 @@
     "@ngrx/router-store": "~9.2.0",
     "@ngrx/store": "~9.2.0",
     "@ngrx/store-devtools": "~9.2.0",
+    "@nguniversal/express-engine": "^10.1.0",
     "@ngx-translate/core": "^13.0.0",
     "@ngx-translate/http-loader": "^6.0.0",
     "@scullyio/init": "^1.0.1",
