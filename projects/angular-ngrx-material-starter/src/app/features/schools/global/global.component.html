@@ -1,0 +1,118 @@
+<div class="container" style="background: white; padding: 1em">
+  <h1 class="d-none d-md-block">Situația actualizată a școlilor</h1>
+  <h2 class="d-md-none">Situația actualizată a școlilor</h2>
+  <p class="p-nice">Prezentăm sinteza desfășurării orelor în unităților de învățământ preuniversitar conform raportărilor făcute de către Ministerul Educației și cercetării.
+    Desfășurarea orelor în școli are loc conform celor 3 scenarii de prezentă fizică la școală a elevilor.</p>
+  <div class="p-nice">
+    <div><b>Ultima actualizare: </b><span style="font-style: italic">{{ latestSource?.accessed | date: 'EEEE MMM d, y, H:mm:ss':undefined:'ro-RO' }}</span></div>
+    <div><b>Sursa: </b> <a [href]="latestSource?.url" rel="noopener noreferrer" target="_blank">{{ latestSource?.name }}</a></div>
+  </div>
+  <div class="fullwidth" *ngIf="isLoading">
+    <mat-spinner style="margin:auto"></mat-spinner>
+  </div>
+  <div class="row" style="margin-top: 15px;">
+    <div class="d-none d-lg-block col-lg-1"></div>
+    <div class="col-12 col-sm-5 col-lg-2">
+      <ngx-charts-pie-chart
+        [results]="todayData"
+        [scheme]="colorScheme"
+        [labels]="false"
+        [legend]="false">
+      </ngx-charts-pie-chart>
+    </div>
+    <div class="col-2 col-sm-1 col-lg-1"></div>
+    <div class="col-10 col-sm-6 col-lg-4">
+        <ngx-charts-advanced-legend
+          [data]="todayData"
+          [colors]="legendColors">
+        </ngx-charts-advanced-legend>
+    </div>
+    <div class="col-md-12 col-lg-4" style="margin: auto">
+      <p style="font-size: 0.85em"><span style="margin-top:15px; background: #00701a; color:white; padding: 0.25em 0.5em; font-weight: bolder; border-radius: 2px">Scenariul S1</span> denumit și scenariul verde presupune participarea zilnică (față în față) a tuturor preșcolarilor și elevilor în unitățile de învățământ, cu respectarea și aplicarea tuturor normelor de protecție sanitară</p>
+      <p style="font-size: 0.85em"><span style="background: #ff9800; color:white; padding: 0.25em 0.5em; font-weight: bolder; border-radius: 2px">Scenariul S2</span> denumit și scenariul galben presupune participarea zilnică (față în față) a tuturor preșcolarilor și elevilor din învățământul primar, a elevilor din clasele a VIII-a și a XII-a, cu respectarea și aplicarea tuturor normelor de protecție, respectiv revenirea parțială (prin rotație de una-două săptămâni) a elevilor din celelalte clase de gimnaziu și liceu, cu respectarea și aplicarea tuturor normelor de protecție</p>
+      <p style="font-size: 0.85em"><span style="background: #8e0000; color:white; padding: 0.25em 0.5em; font-weight: bolder; border-radius: 2px" >Scenariul S3</span> denumit și scenariul roșu presupune participarea tuturor preșcolarilor și elevilor la activități/lecții online</p>
+    </div>
+  </div>
+
+  <h2 class="d-none d-md-block">Istoricul evoluției scenariilor aplicate școlilor la nivel național</h2>
+  <h3 class="d-md-none">Istoricul evoluției scenarilor aplicate școlilor la nivel național</h3>
+
+  <div class="d-none d-md-block" style="min-height: 300px;  max-height: 400px;  height: 30%;">
+    <ngx-charts-line-chart
+      [scheme]="colorScheme"
+      [legend]="true"
+      [showXAxisLabel]="false"
+      [showYAxisLabel]="true"
+      [xAxis]="true"
+      [yAxis]="true"
+      [xAxisLabel]="''"
+      [yAxisLabel]="'Număr școli'"
+      [timeline]="false"
+      [results]="dataSetsTime"
+      [legendPosition]="'right'"
+      [legendTitle]="'Scenarii'"
+      [xAxisTickFormatting]="toDate"
+      [rotateXAxisTicks]="true"
+      [yScaleMax]="yScaleMax"
+      [xScaleMax]="xScaleMax">
+<!--      <ng-template #tooltipTemplate let-model="model">-->
+<!--        This is the single point tooltip template-->
+<!--        <pre>{{model|json}}</pre>-->
+<!--        hello-->
+<!--      </ng-template>-->
+
+<!--      <ng-template #seriesTooltipTemplate let-model="model">-->
+<!--        This is vertical line tooltip template-->
+<!--        <pre>{{model|json}}</pre>-->
+<!--        he-->
+<!--      </ng-template>-->
+    </ngx-charts-line-chart>
+  </div>
+  <!-- schimba in detectia resolutiei -->
+  <div class="d-md-none" style="width: 100%; overflow-x: auto;">
+    <div style="min-height: 300px;  max-height: 400px;  height: 30%; margin-bottom: 100px; min-width:600px">
+      <ngx-charts-line-chart
+        [scheme]="colorScheme"
+        [legend]="true"
+        [showXAxisLabel]="false"
+        [showYAxisLabel]="true"
+        [xAxis]="true"
+        [yAxis]="true"
+        [xAxisLabel]="''"
+        [yAxisLabel]="'Număr școli'"
+        [timeline]="false"
+        [results]="dataSetsTime"
+        [legendPosition]="'below'"
+        [legendTitle]="'Scenarii'"
+        [xAxisTickFormatting]="toDate"
+        [rotateXAxisTicks]="true"
+        [yScaleMax]="yScaleMax"
+        [xScaleMax]="xScaleMax">
+      </ngx-charts-line-chart>
+    </div>
+  </div>
+
+  <h2 class="d-none d-md-block" style="margin-top: 15px;">Cele mai recente buletine informative</h2>
+  <h3 class="d-md-none" style="margin-top: 15px;">Cele mai recente buletine informative</h3>
+  <p class="p-nice">Acestea sunt cele mai recente 5 buletine informative privind dinamica scenariilor de funcționare a unităților de învățământ preuniversitar
+  sau alte surse de informare publică despre evoluția scenariilor de funcționare a școlilor la nivel național.</p>
+  <div>
+     <div class="row" *ngFor="let update of updates | filterBy: ['derived']: false | slice: -5 | reverse">
+      <div class="col-3" style="vertical-align:center; text-align: center"><span style="white-space: nowrap;">{{ converToDateobject(update.date) | date : 'd MMM y':undefined:'ro-RO' }}:</span></div>
+      <div class="col-9"><a [href]="update.source.url" [matTooltip]="update.source.name" style="vertical-align:top;" rel="noopener noreferrer" target="_blank">
+        <span class="truncate"><fa-icon icon="file" style="padding-left: 10px; padding-right:5px;"></fa-icon>{{ update.source.name}}</span></a></div>
+    </div>
+  </div>
+
+  <h2 class="d-none d-md-block" style="margin-top: 15px;">Donează</h2>
+  <h3 class="d-md-none" style="margin-top: 15px;">Donează</h3>
+  <p style="margin-top:10px;" class="p-nice">Dacă ți-ai schimbat recent telefonul sau ai o tabletă ținută într-un sertar, poate un laptop uitat în debara, poți să le donezi și să contribui la educație digitală cu șanse egale pentru toți.</p>
+  <p class="p-nice">Ai certitudinea că donațiile tale ajung direct la copiii care au cel mai mult nevoie prin intermediul partenerilor atent selecționați.</p>
+  <div class="fullwidth" style="max-width: 700px;">
+    <div class="fullwidth" style="display:flex; max-width: 700px; flex-wrap: wrap; justify-content: space-evenly;">
+      <button class="stat-main" mat-raised-button routerLink="/donate/laptop" color="primary" style="min-width:160px; display:flex"><span style="min-width:120px;"><fa-icon icon="laptop" style="margin-right: 0.25em"></fa-icon>Donează laptop</span></button>
+      <button class="stat-main" mat-raised-button routerLink="/donate/tablet" color="accent" style="min-width:160px; display:flex"><span style="min-width:120px;"><fa-icon icon="tablet" style="margin-right: 0.25em"></fa-icon> Donează tabletă</span></button>
+      <button class="stat-main" mat-raised-button routerLink="/donate/phone" color="warn" style="min-width:160px; display:flex"><span style="min-width:120px;"><fa-icon icon="mobile" style="margin-right: 0.25em"></fa-icon>Donează telefon</span></button>
+    </div>
+  </div>
+</div>

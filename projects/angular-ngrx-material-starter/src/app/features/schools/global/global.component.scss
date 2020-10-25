@@ -1,0 +1,29 @@
+.fullwidth {
+  margin: auto;
+}
+
+.p-nice{
+  margin: 1rem 1rem 1rem 1rem;
+  text-align: left;
+}
+
+.truncate {
+  display: inline-block;
+  width: 95%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+table {
+  width: 90%;
+  margin: auto;
+}
+
+td:nth-child(1) {
+  width: 30%;
+}
+
+td:nth-child(2) {
+  width: 70%;
+}
