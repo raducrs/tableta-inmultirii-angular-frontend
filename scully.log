@@ -1,0 +1,67 @@
+No configuration for route "[33m/confirmation/:donationId/c/:activationCode[39m" found. SkippingNo configuration for route "[33m/share/me/:image[39m" found. Skipping
+
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------No configuration for route "[33m/confirmation/:donationId/c/:activationCode[39m" found. SkippingNo configuration for route "[33m/share/me/:image[39m" found. Skipping
+
+
+Puppeteer error while rendering "[33m/puser/test[39m"
+TimeoutError: Navigation timeout of 30000 ms exceeded
+ we will retry rendering this page up to 3 times.Puppeteer error while rendering "[33m/donate/thank-you[39m"
+TimeoutError: Navigation timeout of 30000 ms exceeded
+ we will retry rendering this page up to 3 times.Puppeteer error while rendering "[33m/donate[39m"
+TimeoutError: Navigation timeout of 30000 ms exceeded
+ we will retry rendering this page up to 3 times.
+
+
+Puppeteer error while rendering "[33m/share/customize[39m"
+TimeoutError: Navigation timeout of 30000 ms exceeded
+ we will retry rendering this page up to 3 times.
+Puppeteer error while rendering "[33m/puser/test[39m"
+TimeoutError: Navigation timeout of 30000 ms exceeded
+ we will retry rendering this page up to 3 times.Puppeteer error while rendering "[33m/donate/thank-you[39m"
+TimeoutError: Navigation timeout of 30000 ms exceeded
+ we will retry rendering this page up to 3 times.
+
+Puppeteer error while rendering "[33m/donate[39m"
+TimeoutError: Navigation timeout of 30000 ms exceeded
+ we will retry rendering this page up to 3 times.
+Puppeteer error while rendering "[33m/share/customize[39m"
+TimeoutError: Navigation timeout of 30000 ms exceeded
+ we will retry rendering this page up to 3 times.Puppeteer error while rendering "[33m/donate/thank-you[39m"
+TimeoutError: Navigation timeout of 30000 ms exceeded
+ we will retry rendering this page up to 3 times.Puppeteer error while rendering "[33m/puser/test[39m"
+TimeoutError: Navigation timeout of 30000 ms exceeded
+ we will retry rendering this page up to 3 times.Puppeteer error while rendering "[33m/donate[39m"
+TimeoutError: Navigation timeout of 30000 ms exceeded
+ we will retry rendering this page up to 3 times.
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------No configuration for route "[33m/confirmation/:donationId/c/:activationCode[39m" found. SkippingNo configuration for route "[33m/share/me/:image[39m" found. Skipping
+
+
+Received Kill command
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------No configuration for route "[33m/confirmation/:donationId/c/:activationCode[39m" found. SkippingNo configuration for route "[33m/share/me/:image[39m" found. Skipping
+
+
+Received Kill command
+
+----------------------------------
+Using stored unhandled routes!.
+   To discover new routes in the angular app use "[33mnpm run scully -- --scanRoutes[39m"
+----------------------------------No configuration for route "[33m/confirmation/:donationId/c/:activationCode[39m" found. SkippingNo configuration for route "[33m/share/me/:image[39m" found. Skipping
+
+
+No configuration for route "[33m/confirmation/:donationId/c/:activationCode[39m" found. SkippingNo configuration for route "[33m/share/me/:image[39m" found. Skipping
+
+Received Kill command
+No configuration for route "[33m/confirmation/:donationId/c/:activationCode[39m" found. SkippingNo configuration for route "[33m/share/me/:image[39m" found. Skipping
+
+Received Kill command
