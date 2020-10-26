@@ -191,7 +191,11 @@
             "browserTarget": "angular-ngrx-material-starter:build:production",
             "serverTarget": "angular-ngrx-material-starter:server:production",
             "routes": [
-              "/"
+              "/home",
+              "/home/contact",
+              "/donate",
+              "/donate/laptop",
+              "/schools"
             ]
           },
           "configurations": {

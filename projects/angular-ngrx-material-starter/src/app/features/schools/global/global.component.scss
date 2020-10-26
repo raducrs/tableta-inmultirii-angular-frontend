@@ -2,7 +2,7 @@
   margin: auto;
 }
 
-.p-nice{
+.p-nice {
   margin: 1rem 1rem 1rem 1rem;
   text-align: left;
 }
@@ -26,4 +26,15 @@ td:nth-child(1) {
 
 td:nth-child(2) {
   width: 70%;
+}
+
+.stat-main {
+  padding: 3px 24px;
+  color: white;
+  margin: 5px;
+}
+
+.inline-ssr-data {
+  font-size: 8px;
+  color: white;
 }

@@ -1,8 +1,13 @@
-import {createReducer, on} from '@ngrx/store';
-import {createEntityAdapter, EntityAdapter} from '@ngrx/entity';
-import { SchoolPointsState} from './schools.model';
-import { actionSchoolsDataPointsRetrieve, actionSchoolsDataPointsRetrieveError, actionSchoolsDataPointsSuccess} from './schools.actions';
-import {SchoolDataPoint} from '../scenario-data';
+import { createReducer, on } from '@ngrx/store';
+import { createEntityAdapter, EntityAdapter } from '@ngrx/entity';
+import { SchoolPointsState } from './schools.model';
+import {
+  actionSchoolsDataPointsNoop,
+  actionSchoolsDataPointsRetrieve,
+  actionSchoolsDataPointsRetrieveError,
+  actionSchoolsDataPointsSuccess
+} from './schools.actions';
+import { SchoolDataPoint } from '../scenario-data';
 import * as moment from 'moment';
 
 export function selectDate(s: SchoolDataPoint): string {
@@ -18,14 +23,14 @@ export function selectDate(s: SchoolDataPoint): string {
   return s.date;
 }
 
-export function converToDateobject(obj: any){
-  if (obj instanceof Date){
+export function converToDateobject(obj: any) {
+  if (obj instanceof Date) {
     return obj;
   }
   if (obj.dayOfMonth) {
     return new Date(obj.year, obj.monthValue, obj.dayOfMonth, 12, 0, 0);
   }
-  if (obj instanceof String){
+  if (obj instanceof String) {
     return moment(obj as string, 'YYYY-MM-DD').toDate();
   }
 
@@ -37,18 +42,22 @@ export function sortByDate(a: SchoolDataPoint, b: SchoolDataPoint): number {
   return a.date.localeCompare(b.date);
 }
 
-export const schoolPointsAdapter: EntityAdapter<SchoolDataPoint> = createEntityAdapter<SchoolDataPoint>({
+export const schoolPointsAdapter: EntityAdapter<SchoolDataPoint> = createEntityAdapter<
+  SchoolDataPoint
+>({
   selectId: selectDate,
-  sortComparer: sortByDate,
+  sortComparer: sortByDate
 });
 
-export const initialState: SchoolPointsState = schoolPointsAdapter.getInitialState({
-  ids: [],
-  entities: {},
-  error: null,
-  isLoading: false,
-  lastUpdateSource: null
-});
+export const initialState: SchoolPointsState = schoolPointsAdapter.getInitialState(
+  {
+    ids: [],
+    entities: {},
+    error: null,
+    isLoading: false,
+    lastUpdateSource: null
+  }
+);
 
 export const schoolPointsReducer = createReducer(
   initialState,
@@ -56,7 +65,7 @@ export const schoolPointsReducer = createReducer(
     ...state,
     isLoading: true
   })),
-  on(actionSchoolsDataPointsSuccess, (state, {scenarioData}) => ({
+  on(actionSchoolsDataPointsSuccess, (state, { scenarioData }) => ({
     ...state,
     ...schoolPointsAdapter.upsertMany(scenarioData.data, state),
     isLoading: false,
@@ -65,7 +74,11 @@ export const schoolPointsReducer = createReducer(
   })),
   on(actionSchoolsDataPointsRetrieveError, (state, { error }) => ({
     ...state,
-      isLoading: false,
-      error: error
+    isLoading: false,
+    error: error
+  })),
+  on(actionSchoolsDataPointsNoop, (state) => ({
+    ...state,
+    isLoading: false
   }))
 );

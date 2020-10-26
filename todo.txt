@@ -37,7 +37,7 @@
 - add s3 bucket for images
 - google font solution
 # - do not show error 404 for schools
-- add ec2 instance as stage variable
+- add ec2 instance and api key as stage variable
 #- IMPORTANT chnage back schools history api
 #- FIX date in json output
 - admin inpersonate user for validation
@@ -53,12 +53,13 @@
 - fix comment position issue
 - message to confirm donation to anonnymous user
 - log all events in lambda 
-- buttons in schools have no vertical spacing, home buttons are not all 150px
+# - buttons in schools have no vertical spacing, home buttons are not all 150px
 - time of update is in utc time
 - add health endpoints for cache and repositories
 - change springactive profile to env file
-- 304 Http response is shown as error
-- pass etag header in api
+# - 304 Http response is shown as error
+# - pass etag header in api
+- add Ministerul Educatie on source
 
 # container initialize
 aws configure

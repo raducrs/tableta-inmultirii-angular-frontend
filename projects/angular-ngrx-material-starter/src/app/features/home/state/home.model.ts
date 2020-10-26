@@ -1,9 +1,3 @@
-export interface Source {
-  name: string;
-  url: string;
-  accessed: string;
-}
-
 export interface SchoolStatistic {
   name: string;
   count: number;
@@ -13,18 +7,20 @@ export interface SchoolStatistics {
   red: SchoolStatistic;
   yellow: SchoolStatistic;
   green: SchoolStatistic;
-  redCovid: SchoolStatistic;
-  redLockdown: SchoolStatistic;
 }
 
 export interface SchoolDataPoint {
   stats: SchoolStatistics;
-  source: Source;
   date: string;
-  derived?: boolean;
 }
 
-export interface ScenarioData {
-  lastUpdateSource: Source;
-  data: SchoolDataPoint[];
+export interface GadgetsStats {
+  l: number;
+  t: number;
+  p: number;
+}
+
+export interface HomeState {
+  gadgets: GadgetsStats;
+  latest: SchoolDataPoint;
 }

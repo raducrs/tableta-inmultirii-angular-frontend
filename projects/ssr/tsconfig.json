@@ -1,0 +1,9 @@
+{
+  "extends": "./../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "./out-tsc/app-server",
+    "module": "commonjs",
+    "types": ["node"]
+  },
+  "files": ["server.ts"]
+}

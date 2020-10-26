@@ -57,17 +57,16 @@
  */
 import 'zone.js/dist/zone';
 
-
 (window as any).global = window;
 (window as any).process = {
-  env: { DEBUG: undefined },
+  env: { DEBUG: undefined }
 };
 
-window["ga-disable-UA-7358061-1"] = true;
-window["gid-disable-UA-7358061-1"] = true;
+//window["ga-disable-UA-7358061-1"] = true;
+//window["gid-disable-UA-7358061-1"] = true;
 
 /***************************************************************************************************
-* SCULLY IMPORTS
-*/
+ * SCULLY IMPORTS
+ */
 // tslint:disable-next-line: align
 import 'zone.js/dist/task-tracking';
