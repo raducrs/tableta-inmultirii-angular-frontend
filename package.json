@@ -27,7 +27,12 @@
     "dev:ssr": "ng run angular-ngrx-material-starter:serve-ssr",
     "serve:ssr": "node dist/angular-ngrx-material-starter/server/main.js",
     "build:ssr": "ng build --prod && ng run angular-ngrx-material-starter:server:production",
-    "prerender": "ng run angular-ngrx-material-starter:prerender"
+    "prerender": "ng run angular-ngrx-material-starter:prerender",
+    "light:build:server": "ng run app-light:server:production",
+    "light:build:server:debug": "ng run app-light:server:debug",
+    "light:build:client": "ng run app-light:build:production",
+    "light:build": "npm run light:build:client && npm run light:build:server",
+    "light:serve": "node dist/angular-ngrx-material-starter/server-light/main.js"
   },
   "commitlint": {
     "extends": [

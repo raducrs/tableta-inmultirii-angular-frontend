@@ -8,17 +8,22 @@ import { AppServerModule } from './src/main.server';
 import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
 
+
+const argv = require('minimist')(process.argv.slice(2));
+const distFolder = argv['distFolder'] || join(
+  process.cwd(),
+  'dist/angular-ngrx-material-starter/browser'
+);
+
+const portArg = argv['httpport']
+
 // https://stackoverflow.com/questions/39085632/localstorage-is-not-defined-angular-universal
 // https://stackoverflow.com/a/57781883/5763690
 import 'localstorage-polyfill';
 global['localStorage'] = localStorage;
 
 const domino = require('domino');
-const distFolderIndex = join(
-  process.cwd(),
-  'dist/angular-ngrx-material-starter/browser'
-);
-const template = existsSync(join(distFolderIndex, 'index.original.html'))
+const template = existsSync(join(distFolder, 'index.original.html'))
   ? 'index.original.html'
   : 'index';
 const win = domino.createWindow(template);
@@ -31,13 +36,11 @@ global['Text'] = win.Text;
 global['HTMLElement'] = win.HTMLElement;
 global['navigator'] = win.navigator;
 
+const cache = require('memory-cache');
+
 // The Express app is exported so that it can be used by serverless Functions.
 export function app(): express.Express {
   const server = express();
-  const distFolder = join(
-    process.cwd(),
-    'dist/angular-ngrx-material-starter/browser'
-  );
   const indexHtml = existsSync(join(distFolder, 'index.original.html'))
     ? 'index.original.html'
     : 'index';
@@ -53,6 +56,14 @@ export function app(): express.Express {
   server.set('view engine', 'html');
   server.set('views', distFolder);
 
+  server.get('/cache/invalidate',
+    (req, res) => {
+      console.log('cache cleared')
+      cache.clear()
+      res.send({status: 'cleared cache'})
+    }
+  );
+
   // Example Express Rest API endpoints
   // server.get('/api/**', (req, res) => { });
   // Serve static files from /browser
@@ -63,19 +74,44 @@ export function app(): express.Express {
     })
   );
 
+  server.get(
+    'assets/*.*',
+    express.static(distFolder, {
+      maxAge: '1y'
+    })
+  );
+
+  // TODO check pre generated routes
+
   // All regular routes use the Universal engine
   server.get('*', (req, res) => {
-    res.render(indexHtml, {
-      req,
-      providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }]
-    });
+    // res.render(indexHtml, {
+    //   req,
+    //   providers: [{ provide: APP_BASE_HREF, useValue: req.baseUrl }]
+    // });
+    const entry = cache.get(req.originalUrl); // check if we have a cache entry
+    if (entry) {
+      console.log('serving from cache', req.originalUrl);
+      res.send(entry);                        // send the cache entry
+    } else {
+      console.log('cache miss', req.originalUrl);
+      res.render('index', {
+          req,
+          providers: [{provide: APP_BASE_HREF, useValue: req.baseUrl}]
+        },
+        (err, html) => {
+        console.log('cache put', req.originalUrl)
+        cache.put(req.originalUrl, html);     // save the HTML in the cache
+        res.send(html);
+      });
+    }
   });
 
   return server;
 }
 
 function run(): void {
-  const port = process.env.PORT || 4000;
+  const port = process.env.PORT || portArg || 4000;
 
   // Start up the Node server
   const server = app();

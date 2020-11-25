@@ -1,0 +1,25 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
+{
+  "extends": "./tsconfig.app-light.json",
+  "compilerOptions": {
+    "outDir": "../../out-tsc/server",
+    "target": "es2016",
+    "types": [
+      "node"
+    ]
+  },
+  "ts-node": {
+    // these options are overrides used only by ts-node
+    // same as our --compilerOptions flag and our TS_NODE_COMPILER_OPTIONS environment variable
+    "compilerOptions": {
+      "module": "commonjs"
+    }
+  },
+  "files": [
+    "src/main-light.server.ts",
+    "server-light.ts"
+  ],
+  "angularCompilerOptions": {
+    "entryModule": "./src/app/app-light/app-light.server.module#AppLightServerModule"
+  }
+}

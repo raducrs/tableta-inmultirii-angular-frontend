@@ -66,3 +66,14 @@
   @include angular-material-theme($anms-nature-theme);
   @include custom-components-theme($anms-nature-theme);
 }
+
+// https://github.com/FortAwesome/angular-fontawesome/issues/48
+
+fa-icon svg {
+  display: inline-block;
+  font-size: inherit;
+  height: 1em;
+}
+fa-icon .fa-2x{
+  height: 2em;
+}
