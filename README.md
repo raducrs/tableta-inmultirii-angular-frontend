@@ -10,6 +10,8 @@ Tableta Inmultirii Angular 9 Frontend
 - `@ngrx/effects` for API requests
 - fully responsive design
 - angular-material and custom components in `SharedModule`
+- SSR using Angular Universal
+- static HTML using scully
 
 ## Stack
 
